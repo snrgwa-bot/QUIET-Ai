@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QUIET Ai — Private AI chat that never leaves your iPhone</title>
+  <meta name="description" content="QUIET Ai runs open AI models (Gemma, Qwen, DeepSeek, Llama, Phi) directly on your iPhone. No account, no server, works in airplane mode. It checks what your iPhone can run before you download.">
+  <meta property="og:title" content="QUIET Ai — Private AI chat, on device">
+  <meta property="og:description" content="Download open models once, chat offline forever. Nothing leaves your phone.">
+  <meta property="og:image" content="https://snrgwa-bot.github.io/QUIET-Ai/assets/models.webp">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap nav">
+      <a class="brand" href="index.html"><span class="mark"></span> QUIET Ai</a>
+      <nav class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#models">Models</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#pricing">Pricing</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <div>
+        <p class="eyebrow">On-device AI for iPhone</p>
+        <h1>Chat with AI that <em>never</em> leaves your phone.</h1>
+        <p class="lead">QUIET Ai downloads open models — Gemma, Qwen, DeepSeek, Llama, Phi — and runs them on your iPhone's own chip. No account. No server. Works in airplane mode.</p>
+        <div class="cta">
+          <a class="btn" href="https://apps.apple.com/app/id6811693842">Download on the App Store</a>
+          <a class="btn ghost" href="#how">See how it works</a>
+        </div>
+        <div class="hero-proof">
+          <span>No account</span><span>Nothing sent anywhere</span><span>One-time purchase, no subscription</span>
+        </div>
+      </div>
+      <div class="phone-stage">
+        <div class="phone back float delay"><img src="assets/device.webp" alt="This iPhone screen showing 9.8 GB usable for models"></div>
+        <div class="phone front float"><img src="assets/chat.webp" alt="A chat with an on-device model, showing 22 tokens per second"></div>
+      </div>
+    </div>
+
+    <section id="how">
+      <div class="wrap">
+        <p class="eyebrow reveal">How it works</p>
+        <h2 class="reveal">Three steps. Then it's yours, offline.</h2>
+        <div class="grid3">
+          <div class="reveal"><div class="n">01</div><h3>QUIET reads your iPhone</h3><p>RAM, chip, free storage. In under a second it knows how much memory a model can safely use on <em>this</em> phone.</p></div>
+          <div class="reveal"><div class="n">02</div><h3>Pick a model that fits</h3><p>Every model is rated for your device before you download — Fits well, Fits, Tight, or Too big. No guessing, no crashes.</p></div>
+          <div class="reveal"><div class="n">03</div><h3>Chat anywhere</h3><p>Turn on airplane mode. It still works. Your messages are processed by the model on your phone and saved only there.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fit">
+      <div class="wrap">
+        <p class="eyebrow reveal">The memory stack</p>
+        <h2 class="reveal">Know what fits before you download 4 GB.</h2>
+        <p class="sub reveal">iPhones give apps a fixed share of memory. QUIET measures it, then shows each model's weight and context against your limit. Black fits. Orange is tight. Grey won't load.</p>
+        <div class="demo">
+          <div class="reveal">
+            <div class="ledger">
+              <div class="l"><span>iOS keeps</span><span>2.6 GB</span></div>
+              <div class="l"><span>Limit before iOS closes the app</span><span>9.8 GB</span></div>
+              <div class="l"><span>Sweet spot</span><span>3–8B models</span></div>
+              <div class="l"><span>Gemma 3 4B, estimated</span><span>28 tok/s</span></div>
+            </div>
+            <div class="tags"><span class="tag ink">Fits well</span><span class="tag">Fits</span><span class="tag orange">Tight</span><span class="tag">Too big</span></div>
+          </div>
+          <div class="reveal" id="barsWrap">
+            <div class="bars">
+              <div class="limit"></div>
+              <i style="--h:14%"><em>1B</em><b></b></i>
+              <i style="--h:34%"><em>4B</em><b></b></i>
+              <i style="--h:60%"><em>7B</em><b></b></i>
+              <i class="tight" style="--h:88%"><em>8B</em><b></b></i>
+              <i class="no" style="--h:100%"><em>14B</em><b></b></i>
+              <i class="no" style="--h:100%"><em>70B</em><b></b></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screens">
+      <div class="wrap">
+        <p class="eyebrow reveal">The app</p>
+        <h2 class="reveal">Quiet on the outside, too.</h2>
+        <div class="shots">
+          <figure class="reveal"><div class="phone"><img src="assets/device.webp" alt="Device screen" loading="lazy"></div><figcaption><b>This iPhone</b>What your phone can run, in numbers.</figcaption></figure>
+          <figure class="reveal"><div class="phone"><img src="assets/models.webp" alt="Models list" loading="lazy"></div><figcaption><b>Models</b>Sorted by fit, with a memory stack per model.</figcaption></figure>
+          <figure class="reveal"><div class="phone"><img src="assets/detail.webp" alt="Model detail" loading="lazy"></div><figcaption><b>Detail</b>Pick a size and context. Download once.</figcaption></figure>
+          <figure class="reveal"><div class="phone"><img src="assets/settings.webp" alt="Settings" loading="lazy"></div><figcaption><b>Settings</b>Face ID lock, encrypted backups, your rules.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="models">
+      <div class="wrap">
+        <p class="eyebrow reveal">Models</p>
+        <h2 class="reveal">The best open models, one tap away.</h2>
+        <p class="sub reveal">Eighteen models from Google, Alibaba, DeepSeek, Meta, Microsoft, Mistral and Hugging Face, with sizes chosen for your phone. Reasoning models show their thinking. Gemma 3 can look at photos. Add any public GGUF from Hugging Face.</p>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="track">
+          <span><b>Gemma 3</b> 1B · 4B · 3n</span><span><b>Qwen3</b> 1.7B · 4B · 8B</span><span><b>DeepSeek R1</b> 1.5B · 7B · 8B</span><span><b>Llama 3.2</b> 1B · 3B</span><span><b>Phi-4</b> mini</span><span><b>Mistral</b> 7B</span><span><b>Qwen2.5 Coder</b> 3B · 7B</span><span><b>SmolLM2</b> 360M · 1.7B</span>
+          <span><b>Gemma 3</b> 1B · 4B · 3n</span><span><b>Qwen3</b> 1.7B · 4B · 8B</span><span><b>DeepSeek R1</b> 1.5B · 7B · 8B</span><span><b>Llama 3.2</b> 1B · 3B</span><span><b>Phi-4</b> mini</span><span><b>Mistral</b> 7B</span><span><b>Qwen2.5 Coder</b> 3B · 7B</span><span><b>SmolLM2</b> 360M · 1.7B</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <div class="wrap">
+        <p class="eyebrow reveal">Privacy</p>
+        <h2 class="reveal">Not "private". Offline.</h2>
+        <div class="privacy">
+          <ul class="reveal">
+            <li>No account, no sign-in, no email.</li>
+            <li>No analytics, no crash reporting, no ads.</li>
+            <li>The only downloads are the model files you choose, from Hugging Face.</li>
+            <li>Chats are stored on your phone. Optional backups go to <em>your</em> iCloud Drive, encrypted with a passphrase if you want.</li>
+            <li>Face ID lock and app-switcher blur, built in.</li>
+            <li>A Network row in Settings shows every connection the app has open. Usually: none.</li>
+          </ul>
+          <div class="reveal">
+            <div class="callout"><div class="k">App Store privacy label</div><div class="v">Data Not Collected</div></div>
+            <p class="sub" style="margin-top:16px">Everything QUIET Ai does — reading your device, downloading, chatting, backups — is described in plain language in the <a href="privacy.html">privacy policy</a>. It fits on one page.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="wrap">
+        <p class="eyebrow reveal">Pricing</p>
+        <h2 class="reveal">Free to start. One payment to unlock everything.</h2>
+        <div class="plans">
+          <div class="plan reveal">
+            <div class="name">FREE</div>
+            <div class="price">$0</div>
+            <ul><li>One downloaded model at a time</li><li>Unlimited chats</li><li>All models in the catalog</li><li>Face ID lock, exports, backups to your iPhone</li></ul>
+          </div>
+          <div class="plan pro reveal">
+            <div class="name">QUIET Ai UNLIMITED</div>
+            <div class="price">$14.99<small>once. No subscription.</small></div>
+            <ul><li>Any number of models on your phone</li><li>Import any public GGUF from Hugging Face</li><li>Scheduled backups to iCloud Drive</li><li>Family Sharing included</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <p class="eyebrow reveal">Questions</p>
+        <h2 class="reveal">Straight answers.</h2>
+        <div class="faq reveal" style="margin-top:32px">
+          <details><summary>Which iPhone do I need?</summary><p>Any iPhone running iOS 26. Small models (1–2B) run on every supported phone; 4B models want 6 GB of RAM or more; 7–8B models are for 8–12 GB phones (15 Pro and later). The app tells you exactly what fits before you download.</p></details>
+          <details><summary>Is it really offline?</summary><p>Yes. After a model is downloaded, turn on airplane mode and keep chatting. The app has one gate that every network request goes through, and it only allows model downloads from Hugging Face, an optional catalog refresh, and the App Store.</p></details>
+          <details><summary>How fast is it?</summary><p>It depends on the model and the chip. A 4B model runs at roughly 25–30 tokens per second on an iPhone 17 Pro, faster than most people read. The app shows an estimate before download and the measured speed after every reply.</p></details>
+          <details><summary>Are the answers as good as ChatGPT?</summary><p>No — these are small models that fit in a phone. They're very good at writing, rewriting, summarizing, explaining, and everyday questions, and reasoning models like DeepSeek R1 and Qwen3 handle math and logic well. They know less about recent events and can be wrong, like any AI.</p></details>
+          <details><summary>What happens to my chats?</summary><p>They live in the app's storage on your phone. They're included in your normal iPhone backup unless you turn that off, and you can export them as Markdown or JSON, or as an encrypted backup file.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap row">
+      <div>© 2026 Essential Dev Team · QUIET Ai</div>
+      <div><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:essentialdevteam@gmail.com">Contact</a></div>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }, { rootMargin: '0px 0px -10% 0px' });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>

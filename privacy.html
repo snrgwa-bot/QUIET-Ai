@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — QUIET Ai</title>
+  <meta name="description" content="QUIET Ai privacy policy. No account, no analytics, no data collection. Everything runs and stays on your iPhone.">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap nav">
+      <a class="brand" href="index.html"><span class="mark"></span> QUIET Ai</a>
+      <nav class="nav-links"><a href="support.html">Support</a><a href="privacy.html" class="on">Privacy</a><a href="terms.html">Terms</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap doc">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: September 13, 2026</p>
+
+    <div class="callout"><div class="k">The short version</div><div class="v" style="font-size:18px">QUIET Ai does not collect any data. There is no account, no server, and no analytics. Your chats and models stay on your iPhone.</div></div>
+
+    <p style="margin-top:24px">This policy explains how QUIET Ai ("the app", "we"), developed by Essential Dev Team, handles information. Our App Store privacy label is <strong>Data Not Collected</strong>, and this page describes why that is accurate.</p>
+
+    <h2>What the app does with your information</h2>
+    <p>Everything happens on your device:</p>
+    <ul>
+      <li><strong>Your messages and the AI's replies</strong> are processed by a language model running on your iPhone's processor and stored in the app's private storage on the phone. They are never transmitted to us or to anyone else.</li>
+      <li><strong>Photos you attach</strong> (for vision-capable models) are resized and stored in the app's storage on your phone only.</li>
+      <li><strong>Device information</strong> (chip, memory, free storage, thermal state) is read locally to recommend models that fit. It is displayed to you and not sent anywhere.</li>
+      <li><strong>Settings and preferences</strong> are stored on your phone.</li>
+    </ul>
+
+    <h2>The only network connections the app makes</h2>
+    <p>The app routes every request through a single allow-list. These are the only destinations it can reach:</p>
+    <table>
+      <tr><th>Destination</th><th>When</th><th>What is sent</th></tr>
+      <tr><td><code>huggingface.co</code> and its CDN</td><td>When you tap Download on a model, or paste a public Hugging Face repository to import</td><td>A standard file request. No identifier, account, or chat content. Hugging Face may log the request like any web server; see <a href="https://huggingface.co/privacy">Hugging Face's privacy policy</a>.</td></tr>
+      <tr><td><code>raw.githubusercontent.com</code></td><td>Only when you tap "Check for new models"</td><td>A request for the model catalog file. Nothing about you.</td></tr>
+      <tr><td>Apple App Store / iTunes</td><td>Purchases, restores, and an on-launch check for a newer app version</td><td>Handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</td></tr>
+    </table>
+    <p>Settings › Privacy › Network shows the number of open connections at any time. After your models are downloaded, the app works fully in airplane mode.</p>
+
+    <h2>Backups</h2>
+    <ul>
+      <li><strong>iPhone backup:</strong> your chats are included in your normal iCloud or computer backup of the phone, unless you turn off "Include chats in iPhone backup". Model files are never included.</li>
+      <li><strong>iCloud Drive backup (optional, off by default):</strong> if you turn it on, the app writes a backup file to <em>your own</em> iCloud Drive, under your Apple ID. We have no access to it. You can encrypt manual backup files with a passphrase; we cannot recover a forgotten passphrase.</li>
+      <li><strong>Export:</strong> chats can be exported as Markdown, JSON, or a backup file through the iOS share sheet, to a destination you choose.</li>
+    </ul>
+
+    <h2>Security</h2>
+    <p>Chats are protected by iOS data protection and are inaccessible until the phone is unlocked after restart. You can require Face ID or your passcode to open the app, and the app blurs its contents in the app switcher. Deleting a chat or a model removes it from the app's storage; the app has no copy anywhere else.</p>
+
+    <h2>Third-party AI models</h2>
+    <p>The models you download are published by third parties (Google, Alibaba, DeepSeek, Meta, Microsoft, Mistral AI, Hugging Face) under their own licenses, shown in the app before download. They run entirely on your device. Their output is generated locally and is not reviewed by us or by the model publishers.</p>
+
+    <h2>Children</h2>
+    <p>The app is rated 17+ because the AI models are unfiltered and can produce content unsuitable for children. We do not knowingly collect information from anyone, including children.</p>
+
+    <h2>In-app purchases</h2>
+    <p>QUIET Ai Unlimited is a one-time purchase processed by Apple. We receive no payment details or personal information from the transaction. Purchase status is verified on your device with Apple's StoreKit.</p>
+
+    <h2>Your rights</h2>
+    <p>Because we hold no data about you, there is nothing for us to access, correct, or delete on your behalf. You can delete all chats, all models, or reset the app entirely from Settings › Danger zone, or delete the app itself. Under GDPR, CCPA and similar laws you retain all rights; there is simply no data on our side to exercise them against.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version is published here with a new date. Changes that add any data collection would require a new version of the app and an updated App Store privacy label.</p>
+
+    <h2>Contact</h2>
+    <p>Essential Dev Team · <a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a></p>
+  </main>
+
+  <footer class="site">
+    <div class="wrap row">
+      <div>© 2026 Essential Dev Team · QUIET Ai</div>
+      <div><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+    </div>
+  </footer>
+</body>
+</html>

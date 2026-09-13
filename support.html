@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — QUIET Ai</title>
+  <meta name="description" content="Get help with QUIET Ai: contact support and read answers to common questions about on-device AI models.">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap nav">
+      <a class="brand" href="index.html"><span class="mark"></span> QUIET Ai</a>
+      <nav class="nav-links"><a href="support.html" class="on">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap doc">
+    <h1>Support</h1>
+    <p class="updated">We read every message. Replies usually within a day.</p>
+
+    <div class="support-card">
+      <h3>Contact us</h3>
+      <p>Email <a href="mailto:essentialdevteam@gmail.com?subject=QUIET%20Ai%20Support">essentialdevteam@gmail.com</a>. Please include your iPhone model, iOS version, and the model you were using (Settings › About shows the app version) so we can help faster.</p>
+    </div>
+    <div class="support-card">
+      <h3>Report a bug or request a feature</h3>
+      <p>In the app: Settings › About › <strong>Report a bug</strong> / <strong>Request a feature</strong>. Both open a pre-addressed email.</p>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details><summary>Which model should I download first?</summary><p>Open <strong>Models › Fits</strong>. The first row is marked <strong>Best for you</strong> — it's the highest-quality general model that runs comfortably on your iPhone. On most recent iPhones that's a 4B model such as Gemma 3 4B or Qwen3 4B.</p></details>
+      <details><summary>What do "Fits well", "Fits", "Tight" and "Too big" mean?</summary><p>They compare the model's memory need (weights + context) against what iOS lets an app use on your phone. <strong>Fits well</strong> uses under 55% of that limit and stays fast. <strong>Fits</strong> works well; very long chats may slow down. <strong>Tight</strong> will run but close other apps first. <strong>Too big</strong> can't load, so there's no download button. Tap ⋯ › <em>How fit is calculated</em> in Models for the full explanation.</p></details>
+      <details><summary>Does it work without internet?</summary><p>Yes. Internet is needed only to download a model. After that, everything — chatting, thinking models, photos with Gemma 3 — works in airplane mode.</p></details>
+      <details><summary>The download stopped or failed.</summary><p>Downloads continue in the background and survive closing the app. If one stops, open <strong>Settings › Storage</strong>: you'll see Pause / Resume / Retry and, under ⋯, <em>Restart from zero</em>. If the file fails its integrity check, the app deletes it and retries once automatically. Downloads are Wi-Fi-only by default; change that in Settings › Storage.</p></details>
+      <details><summary>Why does the first reply take longer?</summary><p>The model is loaded into memory on first use, and the first time a model runs on your phone the graphics shaders are compiled. Later replies start in well under a second. Turn on <em>Keep model loaded in background</em> in Settings › Generation if you switch apps often.</p></details>
+      <details><summary>What is "Thinking"?</summary><p>Reasoning models (DeepSeek R1, Qwen3) work through the problem before answering. QUIET shows that as a collapsible "thinking" note above the reply. In Settings › Generation you can show it, hide it but keep it, or discard it. You can also turn thinking off for Qwen3 for faster answers.</p></details>
+      <details><summary>The app said it freed memory. What happened?</summary><p>iOS asked for memory back (usually because other apps or Safari tabs are open). QUIET unloaded the model instead of crashing and kept your chat. Tap <strong>Reload</strong>, or close other apps and try a model with a better fit rating.</p></details>
+      <details><summary>Can I add a model that isn't in the list?</summary><p>Yes, with QUIET Ai Unlimited: Models › ⋯ › <strong>Add from Hugging Face</strong>. Paste a public repository like <code>bartowski/…-GGUF</code>, pick a file, and the app reads its header to check fit before downloading. Split files and gated repositories aren't supported.</p></details>
+      <details><summary>What does Unlimited include, and is it a subscription?</summary><p>It's a one-time purchase, no subscription. It unlocks any number of downloaded models, Hugging Face import, and scheduled iCloud Drive backups. To restore on a new phone: Settings › App › <strong>Restore purchases</strong>.</p></details>
+      <details><summary>How do I back up or move my chats?</summary><p>Settings › Backup › <strong>Export all chats</strong> makes an encrypted backup file you can save anywhere; <strong>Restore from backup</strong> reads it on another phone. Chats are also part of your normal iPhone backup unless you turn that off. Models are never backed up — they're re-downloaded.</p></details>
+      <details><summary>How do I delete everything?</summary><p>Settings › Danger zone: Delete all chats, Delete all models, or Reset app. Deleting the app also removes everything, because nothing is stored outside your phone.</p></details>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap row">
+      <div>© 2026 Essential Dev Team · QUIET Ai</div>
+      <div><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+    </div>
+  </footer>
+</body>
+</html>
