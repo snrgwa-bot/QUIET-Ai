@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — QUIET Ai</title>
-  <meta name="description" content="QUIET Ai privacy policy. No account, no analytics, no data collection. Everything runs and stays on your iPhone.">
+  <meta name="description" content="QUIET Ai privacy policy. No account. Your chats, documents and notes never leave your device. Anonymous usage counts are optional and off by default.">
   <link rel="icon" href="assets/icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -18,11 +18,11 @@
 
   <main class="wrap doc">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: September 13, 2026</p>
+    <p class="updated">Last updated: October 4, 2026</p>
 
-    <div class="callout"><div class="k">The short version</div><div class="v" style="font-size:18px">QUIET Ai does not collect any data. There is no account, no server, and no analytics. Your chats and models stay on your iPhone.</div></div>
+    <div class="callout"><div class="k">The short version</div><div class="v" style="font-size:18px">Your chats, documents, notes and photos never leave your device. There is no account. If you choose to turn on <em>Share anonymous usage</em> (off by default), the app sends anonymous counts such as which features are used, plus crash reports — never anything you write.</div></div>
 
-    <p style="margin-top:24px">This policy explains how QUIET Ai ("the app", "we"), developed by Essential Dev Team, handles information. Our App Store privacy label is <strong>Data Not Collected</strong>, and this page describes why that is accurate.</p>
+    <p style="margin-top:24px">This policy explains how QUIET Ai ("the app", "we"), developed by Essential Dev Team, handles information. Our App Store privacy label lists <strong>Usage Data</strong> and <strong>Diagnostics</strong>, <strong>not linked to you</strong>. These are collected only if you turn on Share anonymous usage, starting with version 1.3. With it off — the default — nothing is collected.</p>
 
     <h2>What the app does with your information</h2>
     <p>Everything happens on your device:</p>
@@ -39,9 +39,23 @@
       <tr><th>Destination</th><th>When</th><th>What is sent</th></tr>
       <tr><td><code>huggingface.co</code> and its CDN</td><td>When you tap Download on a model, or paste a public Hugging Face repository to import</td><td>A standard file request. No identifier, account, or chat content. Hugging Face may log the request like any web server; see <a href="https://huggingface.co/privacy">Hugging Face's privacy policy</a>.</td></tr>
       <tr><td><code>raw.githubusercontent.com</code></td><td>Only when you tap "Check for new models"</td><td>A request for the model catalog file. Nothing about you.</td></tr>
+      <tr><td><code>gqtdmumahcoputhmzkar.supabase.co</code></td><td>Only if you turn on Share anonymous usage (Settings › Privacy)</td><td>Anonymous usage counts and crash reports, described below. Never your messages, replies, documents, notes, photos, or anything you type.</td></tr>
       <tr><td>Apple App Store / iTunes</td><td>Purchases, restores, and an on-launch check for a newer app version</td><td>Handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</td></tr>
     </table>
-    <p>Settings › Privacy › Network shows the number of open connections at any time. After your models are downloaded, the app works fully in airplane mode.</p>
+    <p>Settings › Privacy › Network activity shows the number of open connections at any time. After your models are downloaded, the app works fully in airplane mode.</p>
+
+    <h2>Optional anonymous usage data (off by default)</h2>
+    <p>From version 1.3 you can turn on <strong>Share anonymous usage</strong> in Settings › Privacy. Nothing is collected until you do, and turning it off stops collection immediately and deletes anything not yet sent.</p>
+    <p>When it is on, the app sends:</p>
+    <ul>
+      <li>a random installation ID created by the app (not linked to your Apple Account, name, email or any advertising identifier; it is deleted if you delete the app);</li>
+      <li>device model, iOS and app version, language, region and time zone;</li>
+      <li>when sessions start and end, and which screen was last open;</li>
+      <li>counts of what was used — for example "a reply finished on a Qwen model at 20 tokens per second", "a PDF with 12 pages was added", "@calendar was used";</li>
+      <li>subscription events from Apple (trial started, purchased, cancelled) without prices, receipts or transaction IDs;</li>
+      <li>crash and performance reports from Apple's MetricKit.</li>
+    </ul>
+    <p>It never sends your messages, the AI's replies, document contents or names, chat titles, notes, "About you" text, photos, calendar or reminder contents, your IP address (it is not stored), location, or any advertising identifier. The data is stored with Supabase on our own project, used only to improve the app, never sold or shared, and deleted after 13 months. To have it deleted sooner, email <a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a> with the installation ID shown in Settings › Privacy.</p>
 
     <h2>Backups</h2>
     <ul>
@@ -57,16 +71,16 @@
     <p>The models you download are published by third parties (Google, Alibaba, DeepSeek, Meta, Microsoft, Mistral AI, Hugging Face) under their own licenses, shown in the app before download. They run entirely on your device. Their output is generated locally and is not reviewed by us or by the model publishers.</p>
 
     <h2>Children</h2>
-    <p>The app is rated 17+ because the AI models are unfiltered and can produce content unsuitable for children. We do not knowingly collect information from anyone, including children.</p>
+    <p>The app is rated 17+ because the AI models are unfiltered and can produce content unsuitable for children. We do not knowingly collect personal information from anyone, including children.</p>
 
     <h2>In-app purchases</h2>
-    <p>QUIET Ai Unlimited is a one-time purchase processed by Apple. We receive no payment details or personal information from the transaction. Purchase status is verified on your device with Apple's StoreKit.</p>
+    <p>QUIET Ai Pro (monthly or yearly subscription) and Lifetime (one-time purchase) are processed by Apple. We receive no payment details or personal information from the transaction. Purchase status is verified on your device with Apple's StoreKit. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the period; manage them in your Apple Account settings.</p>
 
     <h2>Your rights</h2>
-    <p>Because we hold no data about you, there is nothing for us to access, correct, or delete on your behalf. You can delete all chats, all models, or reset the app entirely from Settings › Danger zone, or delete the app itself. Under GDPR, CCPA and similar laws you retain all rights; there is simply no data on our side to exercise them against.</p>
+    <p>Your chats and documents exist only on your device: delete them from Settings › Danger zone, or delete the app. If you turned on Share anonymous usage, you can ask us to access or delete that data by emailing <a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a> with your installation ID. Under GDPR, CCPA and similar laws you retain all your rights.</p>
 
     <h2>Changes</h2>
-    <p>If this policy changes, the new version is published here with a new date. Changes that add any data collection would require a new version of the app and an updated App Store privacy label.</p>
+    <p>If this policy changes, the new version is published here with a new date. Any change to what the app collects comes with a new version of the app and an updated App Store privacy label.</p>
 
     <h2>Contact</h2>
     <p>Essential Dev Team · <a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a></p>
