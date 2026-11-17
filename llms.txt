@@ -1,0 +1,59 @@
+# QUIET Ai
+
+> QUIET Ai is an app for iPhone and iPad that runs open AI models on the device itself. After a model is downloaded it works without internet, there is no account, and chats are not sent to any server. It rates every model against the device's memory before download. It costs $4.99 once on the App Store.
+
+- App Store: https://apps.apple.com/app/id6811693842
+- Made by Essential Dev Team. Contact: essentialdevteam@gmail.com
+- It runs GGUF models with llama.cpp. People can add any public GGUF from Hugging Face, including uncensored and abliterated models. The app is rated 18+.
+- Small models (1B to 8B) fit a phone. They write, summarize and explain well; they know less than large cloud models and can be wrong.
+
+## Main pages
+- [Home](https://thequietai.app/): what the app does, a live "what fits your iPhone" demo, pricing, questions
+- [Find a model](https://thequietai.app/models/): pick a device by name and see which models run on it
+- [Uncensored models](https://thequietai.app/models/uncensored.html): what uncensored means and which models to add
+- [Abliterated models](https://thequietai.app/models/abliterated.html): what abliteration is and which models to add
+- [Best for iPhone](https://thequietai.app/models/iphone.html) and [Best for iPad](https://thequietai.app/models/ipad.html)
+- [QUIET Ai vs Ollama](https://thequietai.app/compare/ollama.html) and [QUIET Ai vs LM Studio](https://thequietai.app/compare/lm-studio.html)
+- [Support](https://thequietai.app/support.html), [Privacy policy](https://thequietai.app/privacy.html), [Terms](https://thequietai.app/terms.html)
+
+## Models built into the app
+- [SmolLM2 360M](https://thequietai.app/models/smollm2-360m.html): Tiny and instant. Good for quick rewrites and simple questions on any iPhone. 0.3 GB at Q4_K_M.
+- [Gemma 3 1B](https://thequietai.app/models/gemma-3-1b-it.html): Google's smallest Gemma. Quick replies in many languages. 0.8 GB at Q4_K_M.
+- [Llama 3.2 1B](https://thequietai.app/models/llama-3-2-1b.html): Meta's smallest Llama. Quick and light. 0.8 GB at Q4_K_M.
+- [SmolLM2 1.7B](https://thequietai.app/models/smollm2-1-7b.html): Small, fast, and surprisingly capable for everyday writing help. 1.1 GB at Q4_K_M.
+- [Qwen3 1.7B](https://thequietai.app/models/qwen3-1-7b.html): Small model that can think step by step before answering. 1.1 GB at Q4_K_M.
+- [DeepSeek R1 1.5B](https://thequietai.app/models/deepseek-r1-distill-qwen-1-5b.html): Thinks out loud before answering. Tiny version of DeepSeek R1. 1.1 GB at Q4_K_M.
+- [Qwen2.5 Coder 3B](https://thequietai.app/models/qwen2-5-coder-3b.html): Writes and explains code. Small enough for most iPhones. 1.9 GB at Q4_K_M.
+- [Llama 3.2 3B](https://thequietai.app/models/llama-3-2-3b.html): A well-rounded Llama that runs on most iPhones. 2.0 GB at Q4_K_M.
+- [Phi-4 mini](https://thequietai.app/models/phi-4-mini.html): Microsoft's small model, good at math and structured answers. 2.5 GB at Q4_K_M.
+- [Qwen3 4B](https://thequietai.app/models/qwen3-4b.html): Strong reasoning for its size. Thinking can be turned on or off. 2.5 GB at Q4_K_M.
+- [Gemma 3 4B](https://thequietai.app/models/gemma-3-4b-it.html): Google's compact all-rounder. Fast, multilingual, can look at photos. 2.5 GB at Q4_K_M.
+- [Gemma 3n E2B](https://thequietai.app/models/gemma-3n-e2b-it.html): Built for phones. Uses memory like a 2B model. 3.0 GB at Q4_K_M.
+- [Gemma 3n E4B](https://thequietai.app/models/gemma-3n-e4b-it.html): Built for phones. Uses memory like a 4B model with better answers. 4.5 GB at Q4_K_M.
+- [Mistral 7B](https://thequietai.app/models/mistral-7b-v0-3.html): A classic 7B model with a direct style. 4.4 GB at Q4_K_M.
+- [Qwen2.5 Coder 7B](https://thequietai.app/models/qwen2-5-coder-7b.html): A capable coding assistant for Pro iPhones. 4.7 GB at Q4_K_M.
+- [DeepSeek R1 7B](https://thequietai.app/models/deepseek-r1-distill-qwen-7b.html): Careful step-by-step reasoning for math and logic. 4.7 GB at Q4_K_M.
+- [DeepSeek R1 Llama 8B](https://thequietai.app/models/deepseek-r1-distill-llama-8b.html): DeepSeek R1 reasoning on a Llama base. 4.9 GB at Q4_K_M.
+- [Qwen3 8B](https://thequietai.app/models/qwen3-8b.html): The best answers that fit on a phone. Needs a Pro iPhone. 5.0 GB at Q4_K_M.
+
+## Models people add from Hugging Face
+- [Dolphin 3.0 Qwen2.5 1.5B](https://thequietai.app/models/dolphin-3-qwen2-5-1-5b.html): The smallest Dolphin: under 1 GB, so it runs on nearly every iPhone that QUIET Ai supports. 1.0 GB at Q4_K_M. Add from Hugging Face: bartowski/Dolphin3.0-Qwen2.5-1.5B-GGUF.
+- [Dolphin 3.0 Qwen2.5 3B](https://thequietai.app/models/dolphin-3-qwen2-5-3b.html): Dolphin's few-refusals tuning on Qwen2.5 3B. Quick on any recent iPhone and good in many languages. 1.9 GB at Q4_K_M. Add from Hugging Face: bartowski/Dolphin3.0-Qwen2.5-3b-GGUF.
+- [Qwen2.5 3B Instruct Abliterated](https://thequietai.app/models/qwen2-5-3b-abliterated.html): Qwen2.5 3B with refusals removed. Small, fast and multilingual. 1.9 GB at Q4_K_M. Add from Hugging Face: mradermacher/Qwen2.5-3B-Instruct-abliterated-GGUF.
+- [Dolphin 3.0 Llama 3.2 3B](https://thequietai.app/models/dolphin-3-llama-3-2-3b.html): The small Dolphin. Same few-refusals tuning, light enough for most recent iPhones. 2.0 GB at Q4_K_M. Add from Hugging Face: bartowski/Dolphin3.0-Llama3.2-3B-GGUF.
+- [Hermes 3 Llama 3.2 3B](https://thequietai.app/models/hermes-3-llama-3-2-3b.html): The compact Hermes 3 for stories and characters on a phone with less memory. 2.0 GB at Q4_K_M. Add from Hugging Face: bartowski/Hermes-3-Llama-3.2-3B-GGUF.
+- [Phi-4 mini Abliterated](https://thequietai.app/models/phi-4-mini-abliterated.html): Microsoft's Phi-4 mini with refusals removed. Strong at reasoning and maths for its size. 2.5 GB at Q4_K_M. Add from Hugging Face: mradermacher/Phi-4-mini-instruct-abliterated-GGUF.
+- [Qwen3 4B Abliterated](https://thequietai.app/models/qwen3-4b-abliterated.html): Qwen3 4B with refusals removed. Step-by-step thinking in a size that suits 8 GB iPhones. 2.5 GB at Q4_K_M. Add from Hugging Face: mradermacher/Huihui-Qwen3-4B-abliterated-v2-GGUF.
+- [Gemma 3 4B Abliterated](https://thequietai.app/models/gemma-3-4b-abliterated.html): Google's Gemma 3 4B with refusals removed by Maxime Labonne. Small, fast and multilingual. 2.5 GB at Q4_K_M. Add from Hugging Face: mlabonne/gemma-3-4b-it-abliterated-GGUF.
+- [Hermes 2 Pro Mistral 7B](https://thequietai.app/models/hermes-2-pro-mistral-7b.html): A Mistral 7B tuned by Nous Research for open conversation and structured answers. Apache 2.0, so there are few strings attached. 4.4 GB at Q4_K_M. Add from Hugging Face: NousResearch/Hermes-2-Pro-Mistral-7B-GGUF.
+- [Dolphin 2.9.3 Mistral 7B](https://thequietai.app/models/dolphin-2-9-3-mistral-7b.html): The classic Dolphin on Mistral 7B: follows the system prompt, with a 32K context for long chats. 4.4 GB at Q4_K_M. Add from Hugging Face: bartowski/dolphin-2.9.3-mistral-7B-32k-GGUF.
+- [Mistral 7B Instruct v0.3 Abliterated](https://thequietai.app/models/mistral-7b-v0-3-abliterated.html): Mistral 7B v0.3 with refusals removed. A dependable all-rounder under Apache 2.0. 4.4 GB at Q4_K_M. Add from Hugging Face: mradermacher/Mistral-7B-Instruct-v0.3-abliterated-GGUF.
+- [Qwen2.5 7B Instruct Abliterated](https://thequietai.app/models/qwen2-5-7b-abliterated.html): Qwen2.5 7B with refusals removed. A strong all-rounder in more than 25 languages. 4.7 GB at Q4_K_M. Add from Hugging Face: mradermacher/Qwen2.5-7B-Instruct-abliterated-GGUF.
+- [Qwen2.5 Coder 7B Abliterated](https://thequietai.app/models/qwen2-5-coder-7b-abliterated.html): The Qwen2.5 coding model without refusals: security research, scripts and code the original declines to write. 4.7 GB at Q4_K_M. Add from Hugging Face: bartowski/Qwen2.5-Coder-7B-Instruct-abliterated-GGUF.
+- [Dolphin 3.0 Llama 3.1 8B](https://thequietai.app/models/dolphin-3-llama-3-1-8b.html): A general assistant tuned to follow your system prompt instead of a built-in rulebook. Few refusals, strong at writing and code. 4.9 GB at Q4_K_M. Add from Hugging Face: dphn/Dolphin3.0-Llama3.1-8B-GGUF.
+- [Dolphin 3.0 Llama 3.1 8B Abliterated](https://thequietai.app/models/dolphin-3-llama-3-1-8b-abliterated.html): Dolphin 3.0 with its remaining refusal behaviour removed by abliteration, a technique that edits the model's weights rather than its prompt. 4.9 GB at Q4_K_M. Add from Hugging Face: mradermacher/Dolphin3.0-Llama3.1-8B-abliterated-GGUF.
+- [Hermes 3 Llama 3.1 8B](https://thequietai.app/models/hermes-3-llama-3-1-8b.html): Nous Research's steerable assistant: long conversations, characters and creative writing, and it sticks to the system prompt. 4.9 GB at Q4_K_M. Add from Hugging Face: NousResearch/Hermes-3-Llama-3.1-8B-GGUF.
+- [Llama 3.1 8B Instruct Abliterated](https://thequietai.app/models/llama-3-1-8b-abliterated.html): Meta's Llama 3.1 8B with refusals removed by Maxime Labonne. One of the most downloaded abliterated models. 4.9 GB at Q4_K_M. Add from Hugging Face: mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated-GGUF.
+- [DeepSeek R1 Distill Llama 8B Abliterated](https://thequietai.app/models/deepseek-r1-llama-8b-abliterated.html): The DeepSeek R1 reasoning model (Llama 8B distill) with refusals removed. Shows its thinking before it answers. 4.9 GB at Q4_K_M. Add from Hugging Face: mradermacher/DeepSeek-R1-Distill-Llama-8B-abliterated-GGUF.
+- [Qwen3 8B Abliterated](https://thequietai.app/models/qwen3-8b-abliterated.html): Qwen3 8B with refusals removed by abliteration. Keeps Qwen3's step-by-step thinking and many languages. 5.0 GB at Q4_K_M. Add from Hugging Face: mradermacher/Huihui-Qwen3-8B-abliterated-v2-GGUF.
+- [Josiefied Qwen3 8B Abliterated](https://thequietai.app/models/josiefied-qwen3-8b-abliterated.html): Qwen3 8B abliterated and then tuned to be a direct, helpful assistant. Thinks step by step. 5.0 GB at Q4_K_M. Add from Hugging Face: mradermacher/Josiefied-Qwen3-8B-abliterated-v1-GGUF.
