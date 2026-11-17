@@ -283,6 +283,10 @@ table.vs td:first-child { width: 26%; }
 .picks .callout p { margin-top: 6px; }
 @media (max-width: 700px) { .picks { grid-template-columns: 1fr; } table.vs { font-size: 15px; } }
 
+.result { margin-top: 18px; font-size: 20px; }
+.mgroup-h { grid-column: 1 / -1; font-size: 22px; margin: 22px 0 2px; }
+.mgroup-h:first-child { margin-top: 0; }
+
 /* ---------- phone and tablet ---------- */
 @media (max-width: 1000px) {
   .menu-panel { display: none; }
