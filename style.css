@@ -1,7 +1,7 @@
 :root {
   --bg: #F4F5F2; --paper: #FFFFFF; --sand: #ECEDE7; --rule: #D9DBD3;
   --ink: #15181A; --mute: #6B7075; --dim: #A2A7AB; --accent: #FF6A3D;
-  --sf: -apple-system, "SF Pro Text", "SF Pro Display", system-ui, Helvetica, Arial, sans-serif;
+  --sf: system-ui, -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
   --mono: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
   --wrap: 1100px;
 }
@@ -10,7 +10,7 @@
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { overflow-x: hidden; background: var(--bg); color: var(--ink); font-family: var(--sf); -webkit-font-smoothing: antialiased; line-height: 1.5; }
+body { overflow-x: hidden; background: var(--bg); color: var(--ink); font-family: var(--sf); font-weight: 400; -webkit-font-smoothing: antialiased; line-height: 1.5; }
 a { color: inherit; }
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
 .mono { font-family: var(--mono); }
