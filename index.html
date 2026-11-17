@@ -10,7 +10,8 @@
   <meta property="og:image" content="https://snrgwa-bot.github.io/QUIET-Ai/assets/models.webp">
   <link rel="canonical" href="https://snrgwa-bot.github.io/QUIET-Ai/">
   <link rel="icon" href="assets/icon.png">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=6">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
   <header class="site">
@@ -18,7 +19,7 @@
       <a class="brand" href="index.html"><span class="mark"></span> QUIET Ai</a>
       <nav class="nav-links">
         <div class="menu">
-          <a href="models/index.html" class="">Models</a>
+          <a href="models/index.html" class="keep">Models</a>
           <div class="menu-panel">
             <div class="menu-col"><a href="models/index.html"><strong>Find your model</strong></a><a href="models/index.html#all">Browse all models</a></div>
             <div class="menu-col"><div class="menu-k">By use</div><a href="models/code.html">Coding</a><a href="models/reasoning.html">Reasoning</a><a href="models/uncensored.html">Uncensored</a><a href="models/abliterated.html">Abliterated</a><a href="models/multilingual.html">Multilingual</a><a href="models/vision.html">Photos</a><a href="models/roleplay.html">Stories &amp; characters</a><a href="models/offline.html">Offline &amp; travel</a></div>
@@ -33,161 +34,203 @@
   </header>
 
   <main>
-    <div class="wrap hero">
-      <div>
-        <p class="eyebrow">On-device AI for iPhone</p>
-        <h1>Chat with AI that <em>never</em> leaves your phone.</h1>
-        <p class="lead">QUIET Ai downloads open models — Gemma, Qwen, DeepSeek, Llama, Phi, and uncensored ones like Dolphin and Hermes — and runs them on your iPhone's own chip. No account. No server. Works in airplane mode.</p>
-        <div class="cta">
-          <a class="btn" href="https://apps.apple.com/app/id6811693842">Download on the App Store</a>
-          <a class="btn ghost" href="models/index.html">Find your model</a>
+    <div class="hero">
+      <div class="wrap">
+        <div class="hero-stage">
+          <button class="chip-ui c1" data-ui id="chipDevice" type="button" aria-label="Change iPhone">
+            <span><span class="lab">Your iPhone</span><span class="nm2" id="chipDevName">iPhone 16 or 17</span></span>
+            <span class="read" id="chipDevGB">8 GB</span>
+          </button>
+          <h1><span class="line"><span>Never leaves</span></span><span class="line"><span>your phone.</span></span></h1>
+          <div class="chips2">
+            <a class="chip-ui c2" data-ui href="#fit">
+              <span><span class="lab">Models that fit it</span><span class="nm2">of <span data-count>38</span> on this page</span></span>
+              <span class="read" id="chipFit">31</span>
+            </a>
+            <button class="chip-ui c3" data-ui id="chipAir" type="button" aria-pressed="true">
+              <span><span class="lab">Airplane Mode</span><span class="nm2" id="chipAirTxt">Still answers</span></span>
+              <span class="sw"></span>
+            </button>
+          </div>
+          <p class="say">QUIET Ai runs open AI models, uncensored ones included, on your iPhone's own chip. No account, no server, and it works in Airplane Mode.</p>
+          <div class="cta">
+            <a class="btn orange" href="https://apps.apple.com/app/id6811693842">Download on the App Store</a>
+            <a class="tlink" href="#fit">See what fits your iPhone</a>
+          </div>
         </div>
-        <div class="hero-proof">
-          <span>No account</span><span>Nothing sent anywhere</span><span>38 models, uncensored included</span>
-        </div>
-      </div>
-      <div class="phone-stage">
-        <div class="phone back float delay"><img src="assets/device.webp" alt="This iPhone screen showing 9.8 GB usable for models"></div>
-        <div class="phone front float"><img src="assets/chat.webp" alt="A chat with Gemma 3 4B running on device"></div>
       </div>
     </div>
 
-    <section id="how">
+    <section class="sec" id="fit">
       <div class="wrap">
-        <p class="eyebrow reveal">How it works</p>
-        <h2 class="reveal">Three steps. Then it's yours, offline.</h2>
-        <div class="grid3">
-          <div class="reveal"><div class="n">01</div><h3>QUIET reads your iPhone</h3><p>RAM, chip, free storage. In under a second it knows how much memory a model can safely use on <em>this</em> phone.</p></div>
-          <div class="reveal"><div class="n">02</div><h3>Pick a model that fits</h3><p>Every model is rated for your device before you download — Fits well, Fits, Tight, or Too big. No guessing, no crashes.</p></div>
-          <div class="reveal"><div class="n">03</div><h3>Chat anywhere</h3><p>Turn on airplane mode. It still works. Your messages are processed by the model on your phone and saved only there.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="fit">
-      <div class="wrap">
-        <p class="eyebrow reveal">The memory stack</p>
-        <h2 class="reveal">Know what fits before you download 4 GB.</h2>
-        <p class="sub reveal">iPhones give apps a fixed share of memory. QUIET measures it, then shows each model's weight and context against your limit. Black fits. Orange is tight. Grey won't load.</p>
-        <div class="demo">
-          <div class="reveal">
-            <div class="ledger">
-              <div class="l"><span>iOS keeps</span><span>2.6 GB</span></div>
-              <div class="l"><span>Limit before iOS closes the app</span><span>9.8 GB</span></div>
-              <div class="l"><span>Sweet spot</span><span>3–8B models</span></div>
-              <div class="l"><span>Gemma 3 4B, estimated</span><span>28 tok/s</span></div>
-            </div>
-            <div class="tags"><span class="tag ink">Fits well</span><span class="tag">Fits</span><span class="tag orange">Tight</span><span class="tag">Too big</span></div>
+        <h2 data-rise>What fits your iPhone</h2>
+        <p class="lede" data-rise style="--i:1">iPhones give each app a fixed share of memory. Pick yours and see which models stay under the limit, before you download 4 GB.</p>
+        <div class="demo-panel" data-ui data-rise style="--i:2">
+          <div class="demo-out">
+            <div class="demo-head"><span><b id="outGB">6.0 GB</b> for models</span><span id="outCount">31 of 38 fit</span></div>
+            <div class="bars" id="bars"><div class="limit" aria-hidden="true"></div></div>
+            <p class="demo-foot"><a class="tlink" href="#models" id="outMore">See all 38 models</a></p>
           </div>
-          <div class="reveal" id="barsWrap">
-            <div class="bars">
-              <div class="limit"></div>
-              <i style="--h:14%"><em>1B</em><b></b></i>
-              <i style="--h:34%"><em>4B</em><b></b></i>
-              <i style="--h:60%"><em>7B</em><b></b></i>
-              <i class="tight" style="--h:88%"><em>8B</em><b></b></i>
-              <i class="no" style="--h:100%"><em>14B</em><b></b></i>
-              <i class="no" style="--h:100%"><em>70B</em><b></b></i>
-            </div>
+          <form class="demo-ctl" id="ctl">
+            <div class="ctl-k">Your device</div>
+            <label class="ctl"><input type="radio" name="dev" value="4.3"><span>iPhone 14, 15</span><span class="right"><span class="v">6 GB</span><span class="rd"></span></span></label>
+            <label class="ctl"><input type="radio" name="dev" value="6.0" checked><span>iPhone 15 Pro, 16, 17</span><span class="right"><span class="v">8 GB</span><span class="rd"></span></span></label>
+            <label class="ctl"><input type="radio" name="dev" value="9.8"><span>iPhone 17 Pro, Air</span><span class="right"><span class="v">12 GB</span><span class="rd"></span></span></label>
+            <label class="ctl"><input type="radio" name="dev" value="6.01"><span>iPad Air, iPad mini</span><span class="right"><span class="v">8 GB</span><span class="rd"></span></span></label>
+            <label class="ctl"><input type="radio" name="dev" value="13.0"><span>iPad Pro, 1 TB or 2 TB</span><span class="right"><span class="v">16 GB</span><span class="rd"></span></span></label>
+            <div class="ctl-k">Show only</div>
+            <label class="ctl"><span>Uncensored</span><span class="right"><input type="checkbox" name="use" value="uncensored"><span class="sw"></span></span></label>
+            <label class="ctl"><span>Thinks step by step</span><span class="right"><input type="checkbox" name="use" value="reasoning"><span class="sw"></span></span></label>
+            <label class="ctl"><span>Writes code</span><span class="right"><input type="checkbox" name="use" value="code"><span class="sw"></span></span></label>
+            <label class="ctl"><span>Chat length <span class="v" id="ctxV">4K</span></span><input type="range" name="ctx" min="2" max="16" step="2" value="4" aria-label="Conversation length in thousand tokens"></label>
+          </form>
+        </div>
+        <p class="lede" data-rise>Black fits. Orange is tight. Grey will not load. The app measures your exact iPhone before every download.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="how">
+      <div class="wrap">
+        <div class="steps-col">
+          <h2 data-rise>Three steps, then offline</h2>
+          <div class="ex">
+            <p class="s" data-rise>First, QUIET measures your iPhone.</p>
+            <div class="call" data-rise style="--i:1"><span class="who">You</span> Open the app. There is nothing to sign up for.</div>
+            <div class="resp" data-rise style="--i:2"><img src="assets/f-device.webp" width="603" height="675" alt="QUIET Ai showing 9.8 GB usable for models on an iPhone 17 Pro Max" loading="lazy"></div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="screens">
-      <div class="wrap">
-        <p class="eyebrow reveal">The app</p>
-        <h2 class="reveal">Quiet on the outside, too.</h2>
-        <div class="shots">
-          <figure class="reveal"><div class="phone"><img src="assets/device.webp" alt="Device screen" loading="lazy"></div><figcaption><b>This iPhone</b>What your phone can run, in numbers.</figcaption></figure>
-          <figure class="reveal"><div class="phone"><img src="assets/models.webp" alt="Models list" loading="lazy"></div><figcaption><b>Models</b>Sorted by fit, with a memory stack per model.</figcaption></figure>
-          <figure class="reveal"><div class="phone"><img src="assets/detail.webp" alt="Model detail" loading="lazy"></div><figcaption><b>Detail</b>Pick a size and context. Download once.</figcaption></figure>
-          <figure class="reveal"><div class="phone"><img src="assets/settings.webp" alt="Settings" loading="lazy"></div><figcaption><b>Settings</b>Face ID lock, encrypted backups, your rules.</figcaption></figure>
-        </div>
-      </div>
-    </section>
-
-    <section id="models">
-      <div class="wrap">
-        <p class="eyebrow reveal">Models</p>
-        <h2 class="reveal">Find your model.</h2>
-        <p class="sub reveal">Nineteen models are built into the app, from Google, Alibaba, DeepSeek, Meta, Microsoft, Mistral and Hugging Face. Add any public GGUF from Hugging Face on top. Every model has its own page that shows which iPhones and iPads can run it.</p>
-        <div class="chips reveal" style="margin-top:24px">
-          <a class="chip" href="models/iphone.html">Best for iPhone</a><a class="chip" href="models/ipad.html">Best for iPad</a><a class="chip" href="models/uncensored.html">Uncensored</a><a class="chip" href="models/abliterated.html">Abliterated</a><a class="chip" href="models/code.html">Coding</a><a class="chip" href="models/reasoning.html">Reasoning</a><a class="chip" href="models/roleplay.html">Stories &amp; characters</a><a class="chip" href="models/multilingual.html">Multilingual</a><a class="chip" href="models/vision.html">Photos</a><a class="chip" href="models/offline.html">Offline &amp; travel</a>
-        </div>
-        <p class="reveal" style="margin-top:24px"><a class="btn" href="models/index.html">Browse all 38 models</a></p>
-      </div>
-      <div class="marquee" aria-hidden="true">
-        <div class="track">
-          <span><b>Gemma 3</b> 1B · 4B · 3n</span><span><b>Qwen3</b> 1.7B · 4B · 8B</span><span><b>DeepSeek R1</b> 1.5B · 7B · 8B</span><span><b>Llama 3.2</b> 1B · 3B</span><span><b>Phi-4</b> mini</span><span><b>Mistral</b> 7B</span><span><b>Dolphin 3.0</b> 1.5B · 3B · 8B</span><span><b>Hermes 3</b> 3B · 8B</span>
-          <span><b>Gemma 3</b> 1B · 4B · 3n</span><span><b>Qwen3</b> 1.7B · 4B · 8B</span><span><b>DeepSeek R1</b> 1.5B · 7B · 8B</span><span><b>Llama 3.2</b> 1B · 3B</span><span><b>Phi-4</b> mini</span><span><b>Mistral</b> 7B</span><span><b>Dolphin 3.0</b> 1.5B · 3B · 8B</span><span><b>Hermes 3</b> 3B · 8B</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="unlocked">
-      <div class="wrap">
-        <p class="eyebrow reveal">Uncensored · Abliterated · Unlocked</p>
-        <h2 class="reveal">An AI that answers you.</h2>
-        <p class="sub reveal">Cloud assistants refuse, lecture and log what you ask. Open models tuned to follow your instructions run on your own phone instead, where nobody reads the conversation.</p>
-        <div class="grid3">
-          <div class="reveal"><div class="n">01</div><h3>Dolphin and Hermes</h3><p>Trained to follow your system prompt with few refusals. Good for writing, characters and blunt answers.</p><p><a href="models/uncensored.html">See uncensored models</a></p></div>
-          <div class="reveal"><div class="n">02</div><h3>Abliterated models</h3><p>Llama, Qwen, Gemma, Mistral, Phi and DeepSeek R1 with the refusal behaviour removed from their weights.</p><p><a href="models/abliterated.html">What abliterated means</a></p></div>
-          <div class="reveal"><div class="n">03</div><h3>Yours, offline</h3><p>Add one from Hugging Face in a minute. QUIET checks that it fits first. Rated 18+; use them responsibly.</p><p><a href="models/index.html">Find one for your device</a></p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="privacy">
-      <div class="wrap">
-        <p class="eyebrow reveal">Privacy</p>
-        <h2 class="reveal">Not "private". Offline.</h2>
-        <div class="privacy">
-          <ul class="reveal">
-            <li>No account, no sign-in, no email.</li>
-            <li>No ads. Anonymous usage counts are optional and off unless you turn them on — never your chats.</li>
-            <li>The only downloads are the model files you choose, from Hugging Face.</li>
-            <li>Chats are stored on your phone. Optional backups go to your iCloud Drive, encrypted with a passphrase if you want.</li>
-            <li>Face ID lock and app-switcher blur, built in.</li>
-            <li>A Network row in Settings shows every connection the app has open. Usually: none.</li>
-          </ul>
-          <div class="reveal">
-            <div class="callout"><div class="k">Your chats, documents and notes</div><div class="v">Never leave your phone</div></div>
-            <p class="sub" style="margin-top:16px">Everything QUIET Ai does — reading your device, downloading, chatting, backups — is described in plain language in the <a href="privacy.html">privacy policy</a>. It fits on one page.</p>
+          <div class="ex">
+            <p class="s" data-rise>Then you pick a model that fits.</p>
+            <div class="call" data-rise style="--i:1"><span class="who">You</span> Tap Gemma 3 4B.</div>
+            <div class="resp" data-rise style="--i:2"><img src="assets/f-detail.webp" width="603" height="505" alt="Gemma 3 4B detail: weights 2.7 GB, context 1.1 GB, 6.0 GB to spare, rated Fits well" loading="lazy"></div>
+          </div>
+          <div class="ex">
+            <p class="s" data-rise>Then you turn on Airplane Mode and ask.</p>
+            <div class="call" data-rise style="--i:1"><span class="who">You</span> Draft a customer text about a PPF install: done, no washing for 24 hours.</div>
+            <div class="resp wide" data-rise style="--i:2"><img src="assets/f-chat.webp" width="603" height="315" alt="The reply written on the phone by Gemma 3 4B" loading="lazy"><p>The reply is written by the model on your phone and saved only there. No server ever sees it.</p></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="pricing">
+    <section class="sec" id="models">
       <div class="wrap">
-        <p class="eyebrow reveal">Pricing</p>
-        <h2 class="reveal">Free to start. Pro when you want more.</h2>
-        <div class="plans">
-          <div class="plan reveal">
-            <div class="name">FREE</div>
-            <div class="price">$0</div>
-            <ul><li>One downloaded model at a time</li><li>Unlimited chats, every chat feature</li><li>All models in the catalog</li><li>Face ID lock, exports, backups to your iPhone</li></ul>
+        <h2 data-rise><span data-count>38</span> models, uncensored included</h2>
+        <p class="lede" data-rise style="--i:1">Nineteen are built into the app. The rest you add from Hugging Face in a minute: Dolphin, Hermes, and abliterated versions of Llama, Qwen, Gemma, Mistral, Phi and DeepSeek R1. Tap one to see which devices run it.</p>
+        <div class="legend" data-rise style="--i:2"><span>Fits your device</span><span class="t">Tight</span><span class="n">Too big</span></div>
+        <div class="list-grid">
+          <div data-rise>
+<!--models:start-->
+<div class="mgroup"><a class="mgroup-k" href="models/index.html">Built in</a>
+<a class="mrow" href="models/smollm2-360m.html" data-gb="0.252" data-p="0.36" data-uses="general offline"><span class="dot"></span><span class="nm">SmolLM2 360M</span><span class="val">0.3 GB</span></a>
+<a class="mrow" href="models/gemma-3-1b-it.html" data-gb="0.751" data-p="1.00" data-uses="general multilingual offline"><span class="dot"></span><span class="nm">Gemma 3 1B</span><span class="val">0.8 GB</span></a>
+<a class="mrow" href="models/llama-3-2-1b.html" data-gb="0.752" data-p="1.20" data-uses="general multilingual offline"><span class="dot"></span><span class="nm">Llama 3.2 1B</span><span class="val">0.8 GB</span></a>
+<a class="mrow" href="models/smollm2-1-7b.html" data-gb="0.983" data-p="1.70" data-uses="general offline"><span class="dot"></span><span class="nm">SmolLM2 1.7B</span><span class="val">1.1 GB</span></a>
+<a class="mrow" href="models/qwen3-1-7b.html" data-gb="1.031" data-p="1.70" data-uses="general multilingual offline reasoning"><span class="dot"></span><span class="nm">Qwen3 1.7B</span><span class="val">1.1 GB</span></a>
+<a class="mrow" href="models/deepseek-r1-distill-qwen-1-5b.html" data-gb="1.041" data-p="1.80" data-uses="offline reasoning"><span class="dot"></span><span class="nm">DeepSeek R1 1.5B</span><span class="val">1.1 GB</span></a>
+<a class="mrow" href="models/qwen2-5-coder-3b.html" data-gb="1.797" data-p="3.10" data-uses="code offline"><span class="dot"></span><span class="nm">Qwen2.5 Coder 3B</span><span class="val">1.9 GB</span></a>
+<a class="mrow" href="models/llama-3-2-3b.html" data-gb="1.881" data-p="3.20" data-uses="general multilingual offline"><span class="dot"></span><span class="nm">Llama 3.2 3B</span><span class="val">2.0 GB</span></a>
+<a class="mrow" href="models/phi-4-mini.html" data-gb="2.321" data-p="3.80" data-uses="code general offline reasoning"><span class="dot"></span><span class="nm">Phi-4 mini</span><span class="val">2.5 GB</span></a>
+<a class="mrow" href="models/qwen3-4b.html" data-gb="2.326" data-p="4.00" data-uses="code general multilingual offline reasoning"><span class="dot"></span><span class="nm">Qwen3 4B</span><span class="val">2.5 GB</span></a>
+<a class="mrow" href="models/gemma-3-4b-it.html" data-gb="2.319" data-p="4.30" data-uses="general multilingual offline vision"><span class="dot"></span><span class="nm">Gemma 3 4B</span><span class="val">2.5 GB</span></a>
+<a class="mrow" href="models/gemma-3n-e2b-it.html" data-gb="2.819" data-p="5.40" data-uses="general multilingual"><span class="dot"></span><span class="nm">Gemma 3n E2B</span><span class="val">3.0 GB</span></a>
+<a class="mrow" href="models/gemma-3n-e4b-it.html" data-gb="4.227" data-p="6.90" data-uses="general multilingual"><span class="dot"></span><span class="nm">Gemma 3n E4B</span><span class="val">4.5 GB</span></a>
+<a class="mrow" href="models/mistral-7b-v0-3.html" data-gb="4.072" data-p="7.20" data-uses="general"><span class="dot"></span><span class="nm">Mistral 7B</span><span class="val">4.4 GB</span></a>
+<a class="mrow" href="models/qwen2-5-coder-7b.html" data-gb="4.361" data-p="7.60" data-uses="code"><span class="dot"></span><span class="nm">Qwen2.5 Coder 7B</span><span class="val">4.7 GB</span></a>
+<a class="mrow" href="models/deepseek-r1-distill-qwen-7b.html" data-gb="4.361" data-p="7.60" data-uses="general reasoning"><span class="dot"></span><span class="nm">DeepSeek R1 7B</span><span class="val">4.7 GB</span></a>
+<a class="mrow" href="models/deepseek-r1-distill-llama-8b.html" data-gb="4.583" data-p="8.00" data-uses="general reasoning"><span class="dot"></span><span class="nm">DeepSeek R1 Llama 8B</span><span class="val">4.9 GB</span></a>
+<a class="mrow" href="models/qwen3-8b.html" data-gb="4.682" data-p="8.20" data-uses="code general multilingual reasoning"><span class="dot"></span><span class="nm">Qwen3 8B</span><span class="val">5.0 GB</span></a></div>
+<div class="mgroup"><a class="mgroup-k" href="models/uncensored.html">Uncensored</a>
+<a class="mrow" href="models/dolphin-3-qwen2-5-1-5b.html" data-gb="0.918" data-p="1.50" data-uses="general offline uncensored"><span class="dot"></span><span class="nm">Dolphin 3.0 Qwen2.5 1.5B</span><span class="val">1.0 GB</span></a>
+<a class="mrow" href="models/dolphin-3-qwen2-5-3b.html" data-gb="1.797" data-p="3.10" data-uses="general multilingual offline uncensored"><span class="dot"></span><span class="nm">Dolphin 3.0 Qwen2.5 3B</span><span class="val">1.9 GB</span></a>
+<a class="mrow" href="models/dolphin-3-llama-3-2-3b.html" data-gb="1.881" data-p="3.20" data-uses="general offline uncensored"><span class="dot"></span><span class="nm">Dolphin 3.0 Llama 3.2 3B</span><span class="val">2.0 GB</span></a>
+<a class="mrow" href="models/hermes-3-llama-3-2-3b.html" data-gb="1.881" data-p="3.20" data-uses="general offline roleplay uncensored"><span class="dot"></span><span class="nm">Hermes 3 Llama 3.2 3B</span><span class="val">2.0 GB</span></a>
+<a class="mrow" href="models/hermes-2-pro-mistral-7b.html" data-gb="4.070" data-p="7.20" data-uses="general roleplay uncensored"><span class="dot"></span><span class="nm">Hermes 2 Pro Mistral 7B</span><span class="val">4.4 GB</span></a>
+<a class="mrow" href="models/dolphin-2-9-3-mistral-7b.html" data-gb="4.073" data-p="7.20" data-uses="general roleplay uncensored"><span class="dot"></span><span class="nm">Dolphin 2.9.3 Mistral 7B</span><span class="val">4.4 GB</span></a>
+<a class="mrow" href="models/dolphin-3-llama-3-1-8b.html" data-gb="4.582" data-p="8.00" data-uses="code general uncensored"><span class="dot"></span><span class="nm">Dolphin 3.0 Llama 3.1 8B</span><span class="val">4.9 GB</span></a>
+<a class="mrow" href="models/hermes-3-llama-3-1-8b.html" data-gb="4.582" data-p="8.00" data-uses="general roleplay uncensored"><span class="dot"></span><span class="nm">Hermes 3 Llama 3.1 8B</span><span class="val">4.9 GB</span></a></div>
+<div class="mgroup"><a class="mgroup-k" href="models/abliterated.html">Abliterated</a>
+<a class="mrow" href="models/qwen2-5-3b-abliterated.html" data-gb="1.797" data-p="3.10" data-uses="abliterated general multilingual offline uncensored"><span class="dot"></span><span class="nm">Qwen2.5 3B Instruct Abliterated</span><span class="val">1.9 GB</span></a>
+<a class="mrow" href="models/phi-4-mini-abliterated.html" data-gb="2.321" data-p="3.80" data-uses="abliterated general offline reasoning uncensored"><span class="dot"></span><span class="nm">Phi-4 mini Abliterated</span><span class="val">2.5 GB</span></a>
+<a class="mrow" href="models/qwen3-4b-abliterated.html" data-gb="2.326" data-p="4.00" data-uses="abliterated multilingual offline reasoning uncensored"><span class="dot"></span><span class="nm">Qwen3 4B Abliterated</span><span class="val">2.5 GB</span></a>
+<a class="mrow" href="models/gemma-3-4b-abliterated.html" data-gb="2.319" data-p="4.30" data-uses="abliterated general multilingual offline uncensored"><span class="dot"></span><span class="nm">Gemma 3 4B Abliterated</span><span class="val">2.5 GB</span></a>
+<a class="mrow" href="models/mistral-7b-v0-3-abliterated.html" data-gb="4.073" data-p="7.20" data-uses="abliterated general uncensored"><span class="dot"></span><span class="nm">Mistral 7B Instruct v0.3 Abliterated</span><span class="val">4.4 GB</span></a>
+<a class="mrow" href="models/qwen2-5-7b-abliterated.html" data-gb="4.359" data-p="7.60" data-uses="abliterated general multilingual uncensored"><span class="dot"></span><span class="nm">Qwen2.5 7B Instruct Abliterated</span><span class="val">4.7 GB</span></a>
+<a class="mrow" href="models/qwen2-5-coder-7b-abliterated.html" data-gb="4.359" data-p="7.60" data-uses="abliterated code uncensored"><span class="dot"></span><span class="nm">Qwen2.5 Coder 7B Abliterated</span><span class="val">4.7 GB</span></a>
+<a class="mrow" href="models/dolphin-3-llama-3-1-8b-abliterated.html" data-gb="4.582" data-p="8.00" data-uses="abliterated general uncensored"><span class="dot"></span><span class="nm">Dolphin 3.0 Llama 3.1 8B Abliterated</span><span class="val">4.9 GB</span></a>
+<a class="mrow" href="models/llama-3-1-8b-abliterated.html" data-gb="4.583" data-p="8.00" data-uses="abliterated general uncensored"><span class="dot"></span><span class="nm">Llama 3.1 8B Instruct Abliterated</span><span class="val">4.9 GB</span></a>
+<a class="mrow" href="models/deepseek-r1-llama-8b-abliterated.html" data-gb="4.583" data-p="8.00" data-uses="abliterated reasoning uncensored"><span class="dot"></span><span class="nm">DeepSeek R1 Distill Llama 8B Abliterated</span><span class="val">4.9 GB</span></a>
+<a class="mrow" href="models/qwen3-8b-abliterated.html" data-gb="4.685" data-p="8.20" data-uses="abliterated multilingual reasoning uncensored"><span class="dot"></span><span class="nm">Qwen3 8B Abliterated</span><span class="val">5.0 GB</span></a>
+<a class="mrow" href="models/josiefied-qwen3-8b-abliterated.html" data-gb="4.682" data-p="8.20" data-uses="abliterated general reasoning uncensored"><span class="dot"></span><span class="nm">Josiefied Qwen3 8B Abliterated</span><span class="val">5.0 GB</span></a></div>
+<!--models:end-->
+            <p><a class="btn ghost" href="models/index.html">Find a model by use or device</a></p>
           </div>
-          <div class="plan pro reveal">
-            <div class="name">QUIET Ai PRO</div>
-            <div class="price">$19.99<small>/ year · 7-day free trial</small></div>
-            <ul><li>Any number of models on your phone</li><li>Import any public GGUF from Hugging Face</li><li>Scheduled backups to iCloud Drive</li><li>Family Sharing included</li><li class="mono" style="color:var(--mute)">or $2.99 / month · or $29.99 once, for life</li></ul>
+          <div class="scroller" data-rise style="--i:1"><img src="assets/f-models.webp" width="603" height="905" alt="The Models screen in QUIET Ai, sorted by fit for this iPhone" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="privacy">
+      <div class="wrap">
+        <div class="plate">
+          <div class="side l">
+            <h2 data-rise>Offline is the privacy policy</h2>
+            <div class="note" style="top:21%" data-rise><b>Everything stays here</b><span>No account. Nothing sent after a model downloads.</span></div>
+            <div class="note" style="top:38%" data-rise><b>Blur in the app switcher</b><span>Chats are hidden when you swipe between apps.</span></div>
+            <div class="note" style="top:60%" data-rise><b>Backups to your iCloud</b><span>Optional, and encrypted with a passphrase if you export.</span></div>
+          </div>
+          <div class="img" data-rise><img src="assets/f-settings.webp" width="603" height="1049" alt="QUIET Ai Settings: Lock with Face ID, Blur in app switcher, Network: No connections, backups" loading="lazy"></div>
+          <div class="side r">
+            <div class="note" style="top:29%" data-rise><b>Face ID lock</b><span>Built in. Your chats open only for you.</span></div>
+            <div class="note" style="top:44%" data-rise><b>A Network row</b><span>Shows every connection the app has open. Usually: none.</span></div>
+            <div class="note" style="top:80%" data-rise><b>Export everything</b><span>Markdown, JSON, or an encrypted backup file.</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="faq">
+    <section class="sec" id="why">
       <div class="wrap">
-        <p class="eyebrow reveal">Questions</p>
-        <h2 class="reveal">Straight answers.</h2>
-        <div class="faq reveal" style="margin-top:32px">
-          <details><summary>Which iPhone do I need?</summary><p>Any iPhone running iOS 26. Small models (1–2B) run on every supported phone; 4B models want 6 GB of RAM or more; 7–8B models are for 8–12 GB phones (15 Pro and later). The app tells you exactly what fits before you download.</p></details>
-          <details><summary>Is it really offline?</summary><p>Yes. After a model is downloaded, turn on airplane mode and keep chatting. The app has one gate that every network request goes through, and it only allows model downloads from Hugging Face, an optional catalog refresh, and the App Store.</p></details>
-          <details><summary>How fast is it?</summary><p>It depends on the model and the chip. A 4B model runs at roughly 25–30 tokens per second on an iPhone 17 Pro, faster than most people read. The app shows an estimate before download and the measured speed after every reply.</p></details>
-          <details><summary>Are the answers as good as ChatGPT?</summary><p>No — these are small models that fit in a phone. They're very good at writing, rewriting, summarizing, explaining, and everyday questions, and reasoning models like DeepSeek R1 and Qwen3 handle math and logic well. They know less about recent events and can be wrong, like any AI.</p></details>
-          <details><summary>What happens to my chats?</summary><p>They live in the app's storage on your phone. They're included in your normal iPhone backup unless you turn that off, and you can export them as Markdown or JSON, or as an encrypted backup file.</p></details>
+        <div class="letter">
+          <img src="assets/icon.png" width="48" height="48" alt="" data-rise>
+          <p data-rise>We built QUIET Ai because we wanted an assistant we could ask anything without wondering who else was reading.</p>
+          <p data-rise>Cloud assistants refuse, lecture, and keep a log of what you ask. A model on your own phone does none of that. It has no account to tie you to and no server to send your words to.</p>
+          <p data-rise>That is also why QUIET runs <a href="models/uncensored.html">uncensored models</a> such as Dolphin and Hermes, and <a href="models/abliterated.html">abliterated models</a> with the refusals removed. <mark>An AI that answers you</mark>, on a device you own, is yours to use as an adult. The app is rated 18+.</p>
+          <p data-rise>Small models are not ChatGPT. They write, rewrite, summarize and explain well, and they can be wrong. We would rather tell you that here than have you find out later.</p>
+          <p class="sign" data-rise>Essential Dev Team</p>
+          <p class="role" data-rise>Makers of QUIET Ai</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="pricing">
+      <div class="wrap">
+        <div class="price-grid">
+          <div class="plans-names" role="tablist" aria-label="Plans" data-rise>
+            <button class="pname" role="tab" aria-selected="false" data-plan="free">Free</button>
+            <button class="pname" role="tab" aria-selected="true" data-plan="year">Pro yearly</button>
+            <button class="pname" role="tab" aria-selected="false" data-plan="month">Pro monthly</button>
+            <button class="pname" role="tab" aria-selected="false" data-plan="life">Pro for life</button>
+          </div>
+          <div class="pstage" id="pstage" data-rise style="--i:1">
+            <div class="fig" id="pFig">$19.99</div>
+            <p class="per" id="pPer">a year, after a 7-day free trial</p>
+            <p class="inc" id="pInc">Any number of models on your phone, scheduled backups to iCloud Drive, and Family Sharing.</p>
+            <a class="btn" id="pBtn" href="https://apps.apple.com/app/id6811693842">Get Pro yearly</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="faq">
+      <div class="wrap faq-grid">
+        <h2 data-rise>Straight answers</h2>
+        <div data-rise style="--i:1">
+          <details class="tile" name="faq"><summary>Which iPhone do I need?<span class="plus"></span></summary><p>Any iPhone running iOS 26. Small models (1–2B) run on every supported phone. 4B models want 6 GB of memory or more. 7–8B models are for 8–12 GB phones (iPhone 15 Pro and later). The app tells you exactly what fits before you download.</p></details>
+          <details class="tile" name="faq"><summary>Is it really offline?<span class="plus"></span></summary><p>Yes. After a model is downloaded, turn on Airplane Mode and keep chatting. Every network request goes through one gate, and it only allows model downloads from Hugging Face, an optional catalog refresh, and the App Store.</p></details>
+          <details class="tile" name="faq"><summary>Can I run uncensored models?<span class="plus"></span></summary><p>Yes. Add Dolphin, Hermes or an abliterated model from Hugging Face inside the app. QUIET checks that it fits your device first. The app is rated 18+, and you are responsible for how you use what a model writes.</p></details>
+          <details class="tile" name="faq"><summary>How fast is it?<span class="plus"></span></summary><p>It depends on the model and the chip. A 4B model runs at roughly 25–30 tokens per second on an iPhone 17 Pro, faster than most people read. The app shows an estimate before download and the measured speed after every reply.</p></details>
+          <details class="tile" name="faq"><summary>Is it as good as ChatGPT?<span class="plus"></span></summary><p>No. These are small models that fit in a phone. They are very good at writing, rewriting, summarizing, explaining and everyday questions, and reasoning models like DeepSeek R1 and Qwen3 handle math and logic well. They know less about recent events and can be wrong, like any AI.</p></details>
+          <details class="tile" name="faq"><summary>What happens to my chats?<span class="plus"></span></summary><p>They live in the app's storage on your phone. They are included in your normal iPhone backup unless you turn that off, and you can export them as Markdown or JSON, or as an encrypted backup file.</p></details>
         </div>
       </div>
     </section>
@@ -195,16 +238,102 @@
 
   <footer class="site">
     <div class="wrap row">
-      <div>© 2026 Essential Dev Team · QUIET Ai</div>
-      <div><a href="models/index.html">Models</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:essentialdevteam@gmail.com">Contact</a></div>
+      <div>Offline AI chat for iPhone</div>
+      <div><a href="models/index.html">Models</a><a href="support.html">Support</a><a href="terms.html">Terms</a><a href="mailto:essentialdevteam@gmail.com">Contact</a></div>
+      <div>2026 Essential Dev Team · <a href="privacy.html">Privacy</a></div>
     </div>
   </footer>
 
   <script>
-    const io = new IntersectionObserver((entries) => {
-      for (const e of entries) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-    }, { rootMargin: '0px 0px -10% 0px' });
-    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  (function () {
+    var rows = [].slice.call(document.querySelectorAll('.mrow'));
+    var models = rows.map(function (r) {
+      return { el: r, name: r.querySelector('.nm').textContent, href: r.getAttribute('href'), gb: +r.dataset.gb, p: +r.dataset.p, uses: ' ' + r.dataset.uses + ' ' };
+    });
+    var ctl = document.getElementById('ctl'), bars = document.getElementById('bars');
+    var labels = { great: 'Runs great', runs: 'Runs well', tight: 'Tight', no: 'Too big' };
+    function fit(m, ceil, ctxK) {
+      var need = m.gb + Math.min(0.6, 0.07 * m.p) * (ctxK / 4) + 0.25, r = need / ceil;
+      return { r: r, k: r <= 0.55 ? 'great' : r <= 0.80 ? 'runs' : r <= 1 ? 'tight' : 'no' };
+    }
+    function state() {
+      var d = ctl.querySelector('[name=dev]:checked');
+      return { ceil: Math.round(+d.value * 10) / 10, ctx: +ctl.ctx.value,
+               uses: [].map.call(ctl.querySelectorAll('[name=use]:checked'), function (c) { return c.value; }) };
+    }
+    function render() {
+      var s = state(), fitN = 0;
+      models.forEach(function (m) {
+        m.f = fit(m, s.ceil, s.ctx);
+        if (m.f.k !== 'no') fitN++;
+        m.el.classList.remove('tight', 'no');
+        if (m.f.k === 'tight' || m.f.k === 'no') m.el.classList.add(m.f.k);
+      });
+      var shown = models.filter(function (m) { return s.uses.every(function (u) { return m.uses.indexOf(' ' + u + ' ') > -1; }); });
+      var shownFit = shown.filter(function (m) { return m.f.k !== 'no'; }).length;
+      shown.sort(function (a, b) { return b.gb - a.gb; });
+      // an even spread from the biggest to the smallest, so every kind of fit is on screen
+      var N = 11, pick = [];
+      if (shown.length <= N) pick = shown;
+      else for (var k = 0; k < N; k++) pick.push(shown[Math.round(k * (shown.length - 1) / (N - 1))]);
+      var old = bars.querySelectorAll('.brow'); for (var i = 0; i < old.length; i++) old[i].remove();
+      pick.forEach(function (m) {
+        var a = document.createElement('a');
+        a.className = 'brow ' + m.f.k; a.href = m.href;
+        a.innerHTML = '<span class="nm"></span><span class="track"><span class="fill"></span></span><span class="lbl">' + labels[m.f.k] + '</span>';
+        a.querySelector('.nm').textContent = m.name;
+        bars.appendChild(a);
+        var w = Math.min(m.f.r, 1.25) * 80;
+        requestAnimationFrame(function () { requestAnimationFrame(function () { a.querySelector('.fill').style.width = w + '%'; }); });
+      });
+      document.getElementById('outGB').textContent = s.ceil.toFixed(1) + ' GB';
+      document.getElementById('outCount').textContent = shownFit + ' of ' + shown.length + ' fit';
+      document.getElementById('ctxV').textContent = s.ctx + 'K';
+      document.getElementById('chipFit').textContent = fitN;
+    }
+    ctl.addEventListener('input', render);
+    // hero chips share the same state as the demo
+    var phones = [['4.3', 'iPhone 14 or 15', '6 GB'], ['6.0', 'iPhone 16 or 17', '8 GB'], ['9.8', 'iPhone 17 Pro', '12 GB']], pi = 1;
+    document.getElementById('chipDevice').addEventListener('click', function () {
+      pi = (pi + 1) % phones.length;
+      ctl.querySelector('[name=dev][value="' + phones[pi][0] + '"]').checked = true;
+      document.getElementById('chipDevName').textContent = phones[pi][1];
+      document.getElementById('chipDevGB').textContent = phones[pi][2];
+      render();
+    });
+    var air = document.getElementById('chipAir');
+    air.addEventListener('click', function () {
+      var on = air.getAttribute('aria-pressed') !== 'true';
+      air.setAttribute('aria-pressed', on);
+      document.getElementById('chipAirTxt').textContent = on ? 'Still answers' : 'Answers the same';
+    });
+    render();
+
+    // pricing: one stage, the selected plan's figure
+    var plans = {
+      free: ['$0', 'for as long as you like', 'One downloaded model at a time, unlimited chats, every chat feature, Face ID lock and exports.', 'Download free'],
+      year: ['$19.99', 'a year, after a 7-day free trial', 'Any number of models on your phone, scheduled backups to iCloud Drive, and Family Sharing.', 'Get Pro yearly'],
+      month: ['$2.99', 'a month', 'Everything in Pro, billed monthly. Cancel any time in your iPhone Settings.', 'Get Pro monthly'],
+      life: ['$29.99', 'once, no subscription', 'Everything in Pro, for good. One payment, Family Sharing included.', 'Get Pro for life']
+    };
+    var stage = document.getElementById('pstage'), tabs = [].slice.call(document.querySelectorAll('.pname'));
+    function pick(b) {
+      tabs.forEach(function (t) { t.setAttribute('aria-selected', t === b); });
+      var p = plans[b.dataset.plan];
+      document.getElementById('pFig').textContent = p[0]; document.getElementById('pPer').textContent = p[1];
+      document.getElementById('pInc').textContent = p[2]; document.getElementById('pBtn').textContent = p[3];
+      stage.classList.remove('swap'); void stage.offsetWidth; stage.classList.add('swap');
+    }
+    tabs.forEach(function (b) { b.addEventListener('click', function () { pick(b); }); b.addEventListener('focus', function () { pick(b); }); });
+
+    // entrances
+    var els = [].slice.call(document.querySelectorAll('[data-rise]'));
+    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    els.forEach(function (e) { io.observe(e); });
+  })();
   </script>
 </body>
 </html>
