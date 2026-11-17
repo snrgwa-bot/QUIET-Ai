@@ -18,7 +18,7 @@
 
   <main class="wrap doc">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: October 4, 2026</p>
+    <p class="updated">Last updated: November 17, 2026</p>
 
     <div class="callout"><div class="k">The short version</div><div class="v" style="font-size:18px">Your chats, documents, notes and photos never leave your device. There is no account. If you choose to turn on <em>Share anonymous usage</em> (off by default), the app sends anonymous counts such as which features are used, plus crash reports — never anything you write.</div></div>
 
@@ -28,19 +28,21 @@
     <p>Everything happens on your device:</p>
     <ul>
       <li><strong>Your messages and the AI's replies</strong> are processed by a language model running on your iPhone's processor and stored in the app's private storage on the phone. They are never transmitted to us or to anyone else.</li>
-      <li><strong>Photos you attach</strong> (for vision-capable models) are resized and stored in the app's storage on your phone only.</li>
+      <li><strong>Photos you attach or take with the camera</strong> (for vision-capable models) are resized and stored in the app's storage on your phone only.</li>
+      <li><strong>Voice conversations</strong> (from version 1.6): the microphone is used only while you talk. Your speech is turned into text on your device by Apple's on-device speech recognition. Audio is never recorded, stored or sent. iOS may download Apple's speech model the first time, from Apple.</li>
+      <li><strong>Calendar and reminders</strong>: only if you allow it and type @ in a chat, the app reads your next week of events or your open reminders on your device, so the model can answer questions about them. They are not stored by the app or sent anywhere.</li>
       <li><strong>Device information</strong> (chip, memory, free storage, thermal state) is read locally to recommend models that fit. It is displayed to you and not sent anywhere.</li>
       <li><strong>Settings and preferences</strong> are stored on your phone.</li>
     </ul>
 
     <h2>The only network connections the app makes</h2>
-    <p>The app routes every request through a single allow-list. These are the only destinations it can reach:</p>
+    <p>The app routes every request of its own through a single allow-list. These are the only destinations it can reach. Apple system services you turn on, such as iCloud Drive backup and the speech model for voice, are handled by iOS under Apple's privacy policy.</p>
     <table>
       <tr><th>Destination</th><th>When</th><th>What is sent</th></tr>
       <tr><td><code>huggingface.co</code> and its CDN</td><td>When you tap Download on a model, or paste a public Hugging Face repository to import</td><td>A standard file request. No identifier, account, or chat content. Hugging Face may log the request like any web server; see <a href="https://huggingface.co/privacy">Hugging Face's privacy policy</a>.</td></tr>
       <tr><td><code>raw.githubusercontent.com</code></td><td>Only when you tap "Check for new models"</td><td>A request for the model catalog file. Nothing about you.</td></tr>
       <tr><td><code>gqtdmumahcoputhmzkar.supabase.co</code></td><td>Only if you turn on Share anonymous usage (Settings › Privacy)</td><td>Anonymous usage counts and crash reports, described below. Never your messages, replies, documents, notes, photos, or anything you type.</td></tr>
-      <tr><td>Apple App Store / iTunes</td><td>Purchases, restores, and an on-launch check for a newer app version</td><td>Handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</td></tr>
+      <tr><td>Apple App Store / iTunes</td><td>Checking earlier purchases, and an on-launch check for a newer app version</td><td>Handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</td></tr>
     </table>
     <p>Settings › Privacy › Network activity shows the number of open connections at any time. After your models are downloaded, the app works fully in airplane mode.</p>
 
@@ -52,7 +54,7 @@
       <li>device model, iOS and app version, language, region and time zone;</li>
       <li>when sessions start and end, and which screen was last open;</li>
       <li>counts of what was used — for example "a reply finished on a Qwen model at 20 tokens per second", "a PDF with 12 pages was added", "@calendar was used";</li>
-      <li>subscription events from Apple (trial started, purchased, cancelled) without prices, receipts or transaction IDs;</li>
+      <li>purchase events from Apple for earlier subscriptions (renewed, cancelled) without prices, receipts or transaction IDs;</li>
       <li>crash and performance reports from Apple's MetricKit.</li>
     </ul>
     <p>It never sends your messages, the AI's replies, document contents or names, chat titles, notes, "About you" text, photos, calendar or reminder contents, your IP address (it is not stored), location, or any advertising identifier. The data is stored with Supabase on our own project, used only to improve the app, never sold or shared, and deleted after 13 months. To have it deleted sooner, email <a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a> with the installation ID shown in Settings › Privacy.</p>
@@ -73,8 +75,11 @@
     <h2>Children</h2>
     <p>The app is rated 17+ because the AI models are unfiltered and can produce content unsuitable for children. We do not knowingly collect personal information from anyone, including children.</p>
 
-    <h2>In-app purchases</h2>
-    <p>QUIET Ai Pro (monthly or yearly subscription) and Lifetime (one-time purchase) are processed by Apple. We receive no payment details or personal information from the transaction. Purchase status is verified on your device with Apple's StoreKit. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the period; manage them in your Apple Account settings.</p>
+    <h2>Purchases</h2>
+    <p>The app is bought once through the App Store, and the payment is handled by Apple. We receive no payment details or personal information from the transaction. If you bought QUIET Ai Pro (monthly or yearly) or Lifetime in an earlier version, that purchase is still checked on your device with Apple's StoreKit. Earlier subscriptions renew until you cancel them in your Apple Account settings.</p>
+
+    <h2>This website</h2>
+    <p>thequietai.app is hosted by GitHub Pages, which logs visitors' IP addresses as any web server does. The domain's DNS is run by Cloudflare. The site uses no cookies, no analytics and no advertising.</p>
 
     <h2>Your rights</h2>
     <p>Your chats and documents exist only on your device: delete them from Settings › Danger zone, or delete the app. If you turned on Share anonymous usage, you can ask us to access or delete that data by emailing <a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a> with your installation ID. Under GDPR, CCPA and similar laws you retain all your rights.</p>
