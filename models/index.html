@@ -10,7 +10,7 @@
   <meta property="og:description" content="Find an AI model that runs on your iPhone or iPad without internet: Gemma, Qwen, DeepSeek, Llama, Mistral, Dolphin, Hermes and uncensored models. See what fits your device.">
   <meta property="og:image" content="https://thequietai.app/assets/models.webp">
   <link rel="icon" href="../assets/icon.png">
-  <link rel="stylesheet" href="../style.css?v=9">
+  <link rel="stylesheet" href="../style.css?v=11">
 </head>
 <body>
   <header class="site">
@@ -35,9 +35,9 @@
   <main class="wrap doc models">
     <h1>Find an AI model for your iPhone or iPad</h1>
     <p class="lead">Every model here runs on the device with QUIET Ai: offline, no account, nothing sent anywhere. Pick your device to see what fits.</p>
-    <div class="filters"><div class="filter-k">Your device</div><div class="chips"><button class="chip" data-device="iphone-6">iPhone · 6 GB</button><button class="chip on" data-device="iphone-8">iPhone · 8 GB</button><button class="chip" data-device="iphone-12">iPhone · 12 GB</button><button class="chip" data-device="ipad-8">iPad · 8 GB</button><button class="chip" data-device="ipad-16">iPad · 16 GB</button></div>
-    <div class="filter-k">Use</div><div class="chips"><button class="chip" data-use="code">Coding</button><button class="chip" data-use="reasoning">Reasoning</button><button class="chip" data-use="uncensored">Uncensored</button><button class="chip" data-use="abliterated">Abliterated</button><button class="chip" data-use="multilingual">Multilingual</button><button class="chip" data-use="vision">Photos</button><button class="chip" data-use="roleplay">Stories &amp; characters</button><button class="chip" data-use="offline">Offline &amp; travel</button></div></div>
+    <div class="filters"><label class="filter-k" for="device">Your device</label><div><select id="device" class="pick"><optgroup label="iPhone"><option value="iphone-12" data-name="iPhone 17 Pro Max" data-gb="12">iPhone 17 Pro Max · 12 GB</option><option value="iphone-12" data-name="iPhone 17 Pro" data-gb="12">iPhone 17 Pro · 12 GB</option><option value="iphone-12" data-name="iPhone Air" data-gb="12">iPhone Air · 12 GB</option><option value="iphone-8" data-name="iPhone 17" data-gb="8">iPhone 17 · 8 GB</option><option value="iphone-8" data-name="iPhone 16e" data-gb="8">iPhone 16e · 8 GB</option><option value="iphone-8" data-name="iPhone 16 Pro Max" data-gb="8">iPhone 16 Pro Max · 8 GB</option><option value="iphone-8" data-name="iPhone 16 Pro" data-gb="8">iPhone 16 Pro · 8 GB</option><option value="iphone-8" data-name="iPhone 16 Plus" data-gb="8">iPhone 16 Plus · 8 GB</option><option value="iphone-8" data-name="iPhone 16" data-gb="8" selected>iPhone 16 · 8 GB</option><option value="iphone-8" data-name="iPhone 15 Pro Max" data-gb="8">iPhone 15 Pro Max · 8 GB</option><option value="iphone-8" data-name="iPhone 15 Pro" data-gb="8">iPhone 15 Pro · 8 GB</option><option value="iphone-6" data-name="iPhone 15 Plus" data-gb="6">iPhone 15 Plus · 6 GB</option><option value="iphone-6" data-name="iPhone 15" data-gb="6">iPhone 15 · 6 GB</option><option value="iphone-6" data-name="iPhone 14 Pro Max" data-gb="6">iPhone 14 Pro Max · 6 GB</option><option value="iphone-6" data-name="iPhone 14 Pro" data-gb="6">iPhone 14 Pro · 6 GB</option><option value="iphone-6" data-name="iPhone 14 Plus" data-gb="6">iPhone 14 Plus · 6 GB</option><option value="iphone-6" data-name="iPhone 14" data-gb="6">iPhone 14 · 6 GB</option><option value="iphone-6" data-name="iPhone 13 Pro Max" data-gb="6">iPhone 13 Pro Max · 6 GB</option><option value="iphone-6" data-name="iPhone 13 Pro" data-gb="6">iPhone 13 Pro · 6 GB</option></optgroup><optgroup label="iPad"><option value="ipad-16" data-name="iPad Pro M5, 1 TB or 2 TB" data-gb="16">iPad Pro M5, 1 TB or 2 TB · 16 GB</option><option value="ipad-16" data-name="iPad Pro M4, 1 TB or 2 TB" data-gb="16">iPad Pro M4, 1 TB or 2 TB · 16 GB</option><option value="ipad-8" data-name="iPad Pro M4, 256 or 512 GB" data-gb="8">iPad Pro M4, 256 or 512 GB · 8 GB</option><option value="ipad-8" data-name="iPad Air M3" data-gb="8">iPad Air M3 · 8 GB</option><option value="ipad-8" data-name="iPad Air M2" data-gb="8">iPad Air M2 · 8 GB</option><option value="ipad-8" data-name="iPad Air M1" data-gb="8">iPad Air M1 · 8 GB</option><option value="ipad-8" data-name="iPad mini (A17 Pro)" data-gb="8">iPad mini (A17 Pro) · 8 GB</option></optgroup></select></div>
     <p id="result" class="result" aria-live="polite"></p>
+    <div class="filter-k">Use</div><div class="chips"><button class="chip" data-use="code">Coding</button><button class="chip" data-use="reasoning">Reasoning</button><button class="chip" data-use="uncensored">Uncensored</button><button class="chip" data-use="abliterated">Abliterated</button><button class="chip" data-use="multilingual">Multilingual</button><button class="chip" data-use="vision">Photos</button><button class="chip" data-use="roleplay">Stories &amp; characters</button><button class="chip" data-use="offline">Offline &amp; travel</button></div></div>
     <div id="all" class="mgrid"><a class="mcard" href="smollm2-360m.html" data-uses="general offline" data-gb="0.25" data-iphone-6="great" data-iphone-8="great" data-iphone-12="great" data-ipad-8="great" data-ipad-16="great">
   <div class="mcard-top"><span class="mcard-name">SmolLM2 360M</span><span class="fit fit-great" data-fit>Runs great</span></div>
   <div class="mcard-meta mono">360M · 0.3 GB · 8K</div>
@@ -342,16 +342,15 @@
   <div class="tags"><span class="tag">Abliterated</span><span class="tag">Everyday chat</span><span class="tag">Reasoning</span><span class="tag">Uncensored</span></div>
   <span class="mcard-more">View details</span>
 </a></div>
-    <h2>Which group is my device in?</h2>
+    <h2>Memory by device</h2>
     <table><tr><td><strong>iPhone · 6 GB</strong></td><td>iPhone 13 Pro, 14, 14 Pro, 15, 15 Plus</td></tr><tr><td><strong>iPhone · 8 GB</strong></td><td>iPhone 15 Pro, 16 series, 17, 16e</td></tr><tr><td><strong>iPhone · 12 GB</strong></td><td>iPhone 17 Pro, 17 Pro Max, iPhone Air</td></tr><tr><td><strong>iPad · 8 GB</strong></td><td>iPad Air M1–M3, iPad mini (A17 Pro), iPad Pro M4 256/512 GB</td></tr><tr><td><strong>iPad · 16 GB</strong></td><td>iPad Pro M4 / M5 with 1 TB or 2 TB</td></tr></table>
   </main>
   <script>
   (function(){
     var grid=document.getElementById('all'), cards=[].slice.call(grid.querySelectorAll('.mcard'));
-    var dev='iphone-8', use=null;
+    var sel=document.getElementById('device'), dev=sel.value, use=null;
     var labels={great:'Runs great',runs:'Runs well',tight:'Tight: close other apps',no:'Too big'};
     var heads={great:'Runs great',runs:'Runs well',tight:'Runs, but tight: close other apps first'};
-    var devices={"iphone-6": ["iPhone \u00b7 6 GB", "iPhone 13 Pro, 14, 14 Pro, 15, 15 Plus"], "iphone-8": ["iPhone \u00b7 8 GB", "iPhone 15 Pro, 16 series, 17, 16e"], "iphone-12": ["iPhone \u00b7 12 GB", "iPhone 17 Pro, 17 Pro Max, iPhone Air"], "ipad-8": ["iPad \u00b7 8 GB", "iPad Air M1\u2013M3, iPad mini (A17 Pro), iPad Pro M4 256/512 GB"], "ipad-16": ["iPad \u00b7 16 GB", "iPad Pro M4 / M5 with 1 TB or 2 TB"]};
     var rank={great:0,runs:1,tight:2,no:3}, result=document.getElementById('result');
     function apply(){
       [].slice.call(grid.querySelectorAll('.mgroup-h')).forEach(function(h){h.remove();});
@@ -373,10 +372,13 @@
           var h=document.createElement('h2'); h.className='mgroup-h'; h.textContent=heads[f]+' ('+n+')'; grid.appendChild(h); last=f;}
         grid.appendChild(c);
       });
-      var d=devices[dev];
-      result.innerHTML='<strong>'+shown.length+' of '+total+'</strong> models run on <strong>'+d[0]+'</strong> ('+d[1]+').'+(shown.length<total?' The '+(total-shown.length)+' that are too big are hidden.':'');
+      var o=sel.options[sel.selectedIndex];
+      result.textContent='';
+      var b1=document.createElement('strong'); b1.textContent=shown.length+' of '+total;
+      var b2=document.createElement('strong'); b2.textContent=o.dataset.name;
+      result.append(b1,' models run on ',b2,' ('+o.dataset.gb+' GB of memory).'+(shown.length<total?' The '+(total-shown.length)+' that are too big are hidden.':''));
     }
-    document.querySelectorAll('[data-device]').forEach(function(b){b.onclick=function(){dev=b.dataset.device;document.querySelectorAll('[data-device]').forEach(function(x){x.classList.toggle('on',x.dataset.device===dev)});apply();}});
+    sel.onchange=function(){dev=sel.value;apply();};
     document.querySelectorAll('[data-use]').forEach(function(b){b.onclick=function(){use=use===b.dataset.use?null:b.dataset.use;document.querySelectorAll('[data-use]').forEach(function(x){x.classList.toggle('on',x.dataset.use===use)});apply();}});
     apply();
   })();
