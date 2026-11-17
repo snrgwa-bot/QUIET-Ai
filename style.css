@@ -168,7 +168,7 @@ header.site { position: sticky; top: 0; z-index: 30; background: var(--bg); }
 .price-grid { display: grid; grid-template-columns: 6fr 1fr 5fr; align-items: start; }
 .plans-names { display: flex; flex-direction: column; align-items: flex-start; }
 .pname { font: inherit; font-size: var(--big); font-weight: 700; letter-spacing: -0.04em; line-height: 1.12; background: none; border: 0; color: var(--mute); cursor: pointer; padding: 0 0 0 .5em; position: relative; text-align: left; transition: color .2s ease, transform .2s var(--ease); }
-.pname:hover { color: var(--ink); transform: translateX(4px); }
+.pname:hover { color: var(--ink); }
 .pname[aria-selected="true"] { color: var(--ink); }
 .pname[aria-selected="true"]::before { content: ""; position: absolute; left: 0; top: .45em; width: .3em; height: .3em; border-radius: 50%; background: var(--accent); }
 .pstage { grid-column: 3; min-height: 380px; }

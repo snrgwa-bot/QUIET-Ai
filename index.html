@@ -10,7 +10,7 @@
   <meta property="og:image" content="https://snrgwa-bot.github.io/QUIET-Ai/assets/models.webp">
   <link rel="canonical" href="https://snrgwa-bot.github.io/QUIET-Ai/">
   <link rel="icon" href="assets/icon.png">
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -205,17 +205,14 @@
     <section class="sec" id="pricing">
       <div class="wrap">
         <div class="price-grid">
-          <div class="plans-names" role="tablist" aria-label="Plans" data-rise>
-            <button class="pname" role="tab" aria-selected="false" data-plan="free">Free</button>
-            <button class="pname" role="tab" aria-selected="true" data-plan="year">Pro yearly</button>
-            <button class="pname" role="tab" aria-selected="false" data-plan="month">Pro monthly</button>
-            <button class="pname" role="tab" aria-selected="false" data-plan="life">Pro for life</button>
+          <div class="plans-names" data-rise>
+            <h2 class="pname" style="cursor:default;color:var(--ink);padding-left:0">One price.<br>Everything in it.</h2>
           </div>
-          <div class="pstage" id="pstage" data-rise style="--i:1">
-            <div class="fig" id="pFig">$19.99</div>
-            <p class="per" id="pPer">a year, after a 7-day free trial</p>
-            <p class="inc" id="pInc">Any number of models on your phone, scheduled backups to iCloud Drive, and Family Sharing.</p>
-            <a class="btn" id="pBtn" href="https://apps.apple.com/app/id6811693842">Get Pro yearly</a>
+          <div class="pstage" data-rise style="--i:1">
+            <div class="fig">$4.99</div>
+            <p class="per">once, no subscription</p>
+            <p class="inc">Every model your device can run, voice, documents and iCloud backups. No account and no ads.</p>
+            <a class="btn" href="https://apps.apple.com/app/id6811693842">Download on the App Store</a>
           </div>
         </div>
       </div>
@@ -308,23 +305,6 @@
       document.getElementById('chipAirTxt').textContent = on ? 'Still answers' : 'Answers the same';
     });
     render();
-
-    // pricing: one stage, the selected plan's figure
-    var plans = {
-      free: ['$0', 'for as long as you like', 'One downloaded model at a time, unlimited chats, every chat feature, Face ID lock and exports.', 'Download free'],
-      year: ['$19.99', 'a year, after a 7-day free trial', 'Any number of models on your phone, scheduled backups to iCloud Drive, and Family Sharing.', 'Get Pro yearly'],
-      month: ['$2.99', 'a month', 'Everything in Pro, billed monthly. Cancel any time in your iPhone Settings.', 'Get Pro monthly'],
-      life: ['$29.99', 'once, no subscription', 'Everything in Pro, for good. One payment, Family Sharing included.', 'Get Pro for life']
-    };
-    var stage = document.getElementById('pstage'), tabs = [].slice.call(document.querySelectorAll('.pname'));
-    function pick(b) {
-      tabs.forEach(function (t) { t.setAttribute('aria-selected', t === b); });
-      var p = plans[b.dataset.plan];
-      document.getElementById('pFig').textContent = p[0]; document.getElementById('pPer').textContent = p[1];
-      document.getElementById('pInc').textContent = p[2]; document.getElementById('pBtn').textContent = p[3];
-      stage.classList.remove('swap'); void stage.offsetWidth; stage.classList.add('swap');
-    }
-    tabs.forEach(function (b) { b.addEventListener('click', function () { pick(b); }); b.addEventListener('focus', function () { pick(b); }); });
 
     // entrances
     var els = [].slice.call(document.querySelectorAll('[data-rise]'));
