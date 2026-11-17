@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QUIET Ai — Private AI chat that never leaves your iPhone</title>
-  <meta name="description" content="QUIET Ai runs open AI models (Gemma, Qwen, DeepSeek, Llama, Phi) directly on your iPhone. No account, no server, works in airplane mode. It checks what your iPhone can run before you download.">
+  <title>QUIET Ai — Private, offline and uncensored AI chat for iPhone and iPad</title>
+  <meta name="description" content="QUIET Ai runs open AI models (Gemma, Qwen, DeepSeek, Llama, Phi, plus uncensored and abliterated models like Dolphin and Hermes) directly on your iPhone or iPad. No account, no server, works in airplane mode.">
   <meta property="og:title" content="QUIET Ai — Private AI chat, on device">
   <meta property="og:description" content="Download open models once, chat offline forever. Nothing leaves your phone.">
   <meta property="og:image" content="https://snrgwa-bot.github.io/QUIET-Ai/assets/models.webp">
+  <link rel="canonical" href="https://snrgwa-bot.github.io/QUIET-Ai/">
   <link rel="icon" href="assets/icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,11 +17,17 @@
     <div class="wrap nav">
       <a class="brand" href="index.html"><span class="mark"></span> QUIET Ai</a>
       <nav class="nav-links">
-        <a href="#how">How it works</a>
-        <a href="#models">Models</a>
-        <a href="#privacy">Privacy</a>
-        <a href="#pricing">Pricing</a>
+        <div class="menu">
+          <a href="models/index.html" class="">Models</a>
+          <div class="menu-panel">
+            <div class="menu-col"><a href="models/index.html"><strong>Find your model</strong></a><a href="models/index.html#all">Browse all models</a></div>
+            <div class="menu-col"><div class="menu-k">By use</div><a href="models/code.html">Coding</a><a href="models/reasoning.html">Reasoning</a><a href="models/uncensored.html">Uncensored</a><a href="models/abliterated.html">Abliterated</a><a href="models/multilingual.html">Multilingual</a><a href="models/vision.html">Photos</a><a href="models/roleplay.html">Stories &amp; characters</a><a href="models/offline.html">Offline &amp; travel</a></div>
+            <div class="menu-col"><div class="menu-k">By device</div><a href="models/iphone.html">Best for iPhone</a><a href="models/ipad.html">Best for iPad</a></div>
+          </div>
+        </div>
         <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a class="nav-cta" href="https://apps.apple.com/app/id6811693842">Download</a>
       </nav>
     </div>
   </header>
@@ -30,13 +37,13 @@
       <div>
         <p class="eyebrow">On-device AI for iPhone</p>
         <h1>Chat with AI that <em>never</em> leaves your phone.</h1>
-        <p class="lead">QUIET Ai downloads open models — Gemma, Qwen, DeepSeek, Llama, Phi — and runs them on your iPhone's own chip. No account. No server. Works in airplane mode.</p>
+        <p class="lead">QUIET Ai downloads open models — Gemma, Qwen, DeepSeek, Llama, Phi, and uncensored ones like Dolphin and Hermes — and runs them on your iPhone's own chip. No account. No server. Works in airplane mode.</p>
         <div class="cta">
           <a class="btn" href="https://apps.apple.com/app/id6811693842">Download on the App Store</a>
-          <a class="btn ghost" href="#how">See how it works</a>
+          <a class="btn ghost" href="models/index.html">Find your model</a>
         </div>
         <div class="hero-proof">
-          <span>No account</span><span>Nothing sent anywhere</span><span>Lifetime option, no subscription needed</span>
+          <span>No account</span><span>Nothing sent anywhere</span><span>38 models, uncensored included</span>
         </div>
       </div>
       <div class="phone-stage">
@@ -103,13 +110,30 @@
     <section id="models">
       <div class="wrap">
         <p class="eyebrow reveal">Models</p>
-        <h2 class="reveal">The best open models, one tap away.</h2>
-        <p class="sub reveal">Eighteen models from Google, Alibaba, DeepSeek, Meta, Microsoft, Mistral and Hugging Face, with sizes chosen for your phone. Reasoning models show their thinking. Gemma 3 can look at photos. Add any public GGUF from Hugging Face.</p>
+        <h2 class="reveal">Find your model.</h2>
+        <p class="sub reveal">Nineteen models are built into the app, from Google, Alibaba, DeepSeek, Meta, Microsoft, Mistral and Hugging Face. Add any public GGUF from Hugging Face on top. Every model has its own page that shows which iPhones and iPads can run it.</p>
+        <div class="chips reveal" style="margin-top:24px">
+          <a class="chip" href="models/iphone.html">Best for iPhone</a><a class="chip" href="models/ipad.html">Best for iPad</a><a class="chip" href="models/uncensored.html">Uncensored</a><a class="chip" href="models/abliterated.html">Abliterated</a><a class="chip" href="models/code.html">Coding</a><a class="chip" href="models/reasoning.html">Reasoning</a><a class="chip" href="models/roleplay.html">Stories &amp; characters</a><a class="chip" href="models/multilingual.html">Multilingual</a><a class="chip" href="models/vision.html">Photos</a><a class="chip" href="models/offline.html">Offline &amp; travel</a>
+        </div>
+        <p class="reveal" style="margin-top:24px"><a class="btn" href="models/index.html">Browse all 38 models</a></p>
       </div>
       <div class="marquee" aria-hidden="true">
         <div class="track">
-          <span><b>Gemma 3</b> 1B · 4B · 3n</span><span><b>Qwen3</b> 1.7B · 4B · 8B</span><span><b>DeepSeek R1</b> 1.5B · 7B · 8B</span><span><b>Llama 3.2</b> 1B · 3B</span><span><b>Phi-4</b> mini</span><span><b>Mistral</b> 7B</span><span><b>Qwen2.5 Coder</b> 3B · 7B</span><span><b>SmolLM2</b> 360M · 1.7B</span>
-          <span><b>Gemma 3</b> 1B · 4B · 3n</span><span><b>Qwen3</b> 1.7B · 4B · 8B</span><span><b>DeepSeek R1</b> 1.5B · 7B · 8B</span><span><b>Llama 3.2</b> 1B · 3B</span><span><b>Phi-4</b> mini</span><span><b>Mistral</b> 7B</span><span><b>Qwen2.5 Coder</b> 3B · 7B</span><span><b>SmolLM2</b> 360M · 1.7B</span>
+          <span><b>Gemma 3</b> 1B · 4B · 3n</span><span><b>Qwen3</b> 1.7B · 4B · 8B</span><span><b>DeepSeek R1</b> 1.5B · 7B · 8B</span><span><b>Llama 3.2</b> 1B · 3B</span><span><b>Phi-4</b> mini</span><span><b>Mistral</b> 7B</span><span><b>Dolphin 3.0</b> 1.5B · 3B · 8B</span><span><b>Hermes 3</b> 3B · 8B</span>
+          <span><b>Gemma 3</b> 1B · 4B · 3n</span><span><b>Qwen3</b> 1.7B · 4B · 8B</span><span><b>DeepSeek R1</b> 1.5B · 7B · 8B</span><span><b>Llama 3.2</b> 1B · 3B</span><span><b>Phi-4</b> mini</span><span><b>Mistral</b> 7B</span><span><b>Dolphin 3.0</b> 1.5B · 3B · 8B</span><span><b>Hermes 3</b> 3B · 8B</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="unlocked">
+      <div class="wrap">
+        <p class="eyebrow reveal">Uncensored · Abliterated · Unlocked</p>
+        <h2 class="reveal">An AI that answers you.</h2>
+        <p class="sub reveal">Cloud assistants refuse, lecture and log what you ask. Open models tuned to follow your instructions run on your own phone instead, where nobody reads the conversation.</p>
+        <div class="grid3">
+          <div class="reveal"><div class="n">01</div><h3>Dolphin and Hermes</h3><p>Trained to follow your system prompt with few refusals. Good for writing, characters and blunt answers.</p><p><a href="models/uncensored.html">See uncensored models</a></p></div>
+          <div class="reveal"><div class="n">02</div><h3>Abliterated models</h3><p>Llama, Qwen, Gemma, Mistral, Phi and DeepSeek R1 with the refusal behaviour removed from their weights.</p><p><a href="models/abliterated.html">What abliterated means</a></p></div>
+          <div class="reveal"><div class="n">03</div><h3>Yours, offline</h3><p>Add one from Hugging Face in a minute. QUIET checks that it fits first. Rated 18+; use them responsibly.</p><p><a href="models/index.html">Find one for your device</a></p></div>
         </div>
       </div>
     </section>
@@ -123,7 +147,7 @@
             <li>No account, no sign-in, no email.</li>
             <li>No ads. Anonymous usage counts are optional and off unless you turn them on — never your chats.</li>
             <li>The only downloads are the model files you choose, from Hugging Face.</li>
-            <li>Chats are stored on your phone. Optional backups go to <em>your</em> iCloud Drive, encrypted with a passphrase if you want.</li>
+            <li>Chats are stored on your phone. Optional backups go to your iCloud Drive, encrypted with a passphrase if you want.</li>
             <li>Face ID lock and app-switcher blur, built in.</li>
             <li>A Network row in Settings shows every connection the app has open. Usually: none.</li>
           </ul>
@@ -172,7 +196,7 @@
   <footer class="site">
     <div class="wrap row">
       <div>© 2026 Essential Dev Team · QUIET Ai</div>
-      <div><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:essentialdevteam@gmail.com">Contact</a></div>
+      <div><a href="models/index.html">Models</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:essentialdevteam@gmail.com">Contact</a></div>
     </div>
   </footer>
 
